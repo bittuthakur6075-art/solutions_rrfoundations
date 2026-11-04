@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Search, MessageSquare } from "lucide-react";
@@ -16,6 +16,39 @@ export default function ProductsPage() {
     name: string;
     category: string;
   } | null>(null);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const checkHashOrQuery = () => {
+      const hash = window.location.hash.replace("#", "").toLowerCase();
+      if (hash) {
+        if (hash === "crystal-keychain" || hash === "cryctal-keychain") {
+          setSelectedCategory("crystal-keychain");
+          return;
+        }
+        const matched = CATEGORIES.find((c) => c.slug.toLowerCase() === hash);
+        if (matched) {
+          setSelectedCategory(matched.slug);
+          return;
+        }
+      }
+      const params = new URLSearchParams(window.location.search);
+      const catParam = params.get("category")?.toLowerCase();
+      if (catParam) {
+        if (catParam === "crystal-keychain" || catParam === "cryctal-keychain") {
+          setSelectedCategory("crystal-keychain");
+          return;
+        }
+        const matched = CATEGORIES.find((c) => c.slug.toLowerCase() === catParam);
+        if (matched) {
+          setSelectedCategory(matched.slug);
+        }
+      }
+    };
+    checkHashOrQuery();
+    window.addEventListener("hashchange", checkHashOrQuery);
+    return () => window.removeEventListener("hashchange", checkHashOrQuery);
+  }, []);
 
   const filteredProducts = useMemo(() => {
     const term = searchTerm.trim().toLowerCase();

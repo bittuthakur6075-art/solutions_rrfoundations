@@ -126,5 +126,19 @@ export const CATEGORIES: Category[] = [
       "Chrome plated rustproof heavy spring clip",
       "Tailored institutional & corporate branding"
     ]
+  },
+  {
+    "id": "crystal-keychain",
+    "name": "Crystal Keychain",
+    "slug": "crystal-keychain",
+    "description": "High-transparency acrylic crystal keychains, dual-side brand window keyrings, colored accent border tags, and custom geometric promotional shapes.",
+    "image": "/assets/products/category-crystal-keychain-showcase.jpg",
+    "featuredProductCount": 10,
+    "highlights": [
+      "Ultra-clear optical grade crystal acrylic",
+      "Double-sided high-resolution insert branding",
+      "Sturdy nickel-plated keyrings & swivel connectors",
+      "Multiple geometric profiles: Oval, Rectangle, Round & Teardrop"
+    ]
   }
 ];

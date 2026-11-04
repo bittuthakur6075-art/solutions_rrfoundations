@@ -9398,5 +9398,399 @@ export const PRODUCTS: Product[] = [
     ],
     "seoTitle": "Triconix Wires & Cables Industrial Suraksha Writing Pad | RR Foundations",
     "seoDescription": "Triconix Wires & Cables promotional industrial writing pad with Suraksha campaign print manufactured by RR Foundations."
+  },
+  {
+    "id": "prod_crystal-keychain_01",
+    "title": "Multi-Shape Crystal Acrylic Keychain Assortment — Model CK-01",
+    "slug": "multi-shape-crystal-acrylic-keychain-assortment-model-ck-01",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "Precision-molded optical crystal acrylic keychains with multi-shape branding inserts and heavy-duty split rings.",
+    "fullDescription": "Manufactured from ultra-transparent optical acrylic casting with snap-in graphics chambers. Features various classic geometric profiles including round, oval, rectangular, and arched bodies designed for institutional rollouts, corporate giveaways, and automotive dealerships.",
+    "thumbnail": "/assets/products/crystal-keychain-001.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-001.jpeg"
+    ],
+    "materials": [
+      "Optical Grade Cast Acrylic",
+      "High-Gloss Sealed Paper Insert",
+      "Nickel-Plated Steel Split Ring & Chain"
+    ],
+    "specifications": {
+      "Profiles Available": "Round, Oval, Rectangle, Arched Contour",
+      "Ring Diameter": "25 mm Heavy Nickel Split Ring",
+      "Print Method": "Double-Sided 1200 DPI Photo Offset / UV Digital",
+      "Assembly": "Precision Ultrasonic / Snap-Fit Clear Window",
+      "Branding": "Double-Sided Custom Artwork & Contact Details"
+    },
+    "featured": true,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Acrylic Keychain",
+      "Promotional Keychain",
+      "Plastic Keychain",
+      "Corporate Merchandise"
+    ],
+    "seoTitle": "Multi-Shape Crystal Acrylic Keychain Assortment — Model CK-01 | Direct Manufacturer RR Foundations",
+    "seoDescription": "Precision-molded optical crystal acrylic keychains with multi-shape branding inserts. Direct factory pricing by RR Foundations New Delhi.",
+    "aliases": [
+      "cryctal-keychain-model-ck-01",
+      "crystal-keychain-model-ck-01"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_02",
+    "title": "Corporate Branded Crystal Acrylic Keychain Collection — Model CK-02",
+    "slug": "corporate-branded-crystal-acrylic-keychain-collection-model-ck-02",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "Crystal clear promotional acrylic keychains with vibrant dual-side corporate branding inserts.",
+    "fullDescription": "Engineered with shatter-resistant optical polystyrene and crystal acrylic providing maximum light transmission and clarity. Ideal for FMCG brand awareness campaigns, mobile app promotions, and automotive dealer distribution.",
+    "thumbnail": "/assets/products/crystal-keychain-002.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-002.jpeg"
+    ],
+    "materials": [
+      "Optical Grade Polystyrene & Acrylic",
+      "Double-Sided Coated Art Paper Insert",
+      "Tempered Steel O-Ring"
+    ],
+    "specifications": {
+      "Shapes": "Square, Rectangle, Capsule Oval, Circle, Shield",
+      "Edge Finish": "Diamond Polished Clear Edge",
+      "Wall Thickness": "4.5 mm – 5.5 mm Solid Edge",
+      "Packaging": "Individual Scratch-Resistant Poly Pouch",
+      "Production Turnaround": "Bulk Dispatch within 3–5 Days"
+    },
+    "featured": true,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Custom Keychain",
+      "FMCG Merchandise",
+      "Promotional Keyring"
+    ],
+    "seoTitle": "Corporate Branded Crystal Acrylic Keychain Collection — Model CK-02 | RR Foundations",
+    "seoDescription": "Crystal clear promotional acrylic keychains with vibrant dual-side corporate inserts. Manufactured in New Delhi by RR Foundations.",
+    "aliases": [
+      "cryctal-keychain-model-ck-02",
+      "crystal-keychain-model-ck-02"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_03",
+    "title": "Dual-Profile Commercial Crystal Keychain Set — Model CK-03",
+    "slug": "dual-profile-commercial-crystal-keychain-set-model-ck-03",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "Sleek capsule-oval and notched-rectangle crystal keychains designed for delivery fleets and automotive tires.",
+    "fullDescription": "High-transparency promotional crystal keychains featuring moisture-sealed double-sided graphics chambers. Specially crafted for high-wear fleet environments, logistics operators, quick-commerce delivery fleets, and automotive tire brands.",
+    "thumbnail": "/assets/products/crystal-keychain-003.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-003.jpeg"
+    ],
+    "materials": [
+      "Clear Polycarbonate / Acrylic Core",
+      "UV-Resistant Poly Art Print",
+      "Heavy-Duty Swivel Jump Ring"
+    ],
+    "specifications": {
+      "Profiles": "Capsule Oval (60x28mm) & Notched Rectangle (55x30mm)",
+      "Unit Weight": "14g – 16g per unit",
+      "Split Ring": "28 mm Chrome Plated Keyring",
+      "Usage": "Fleet Management, Quick Commerce, Automobile Accessories"
+    },
+    "featured": true,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Automotive Keychain",
+      "Fleet Keyring",
+      "Logistics Merchandise"
+    ],
+    "seoTitle": "Dual-Profile Commercial Crystal Keychain Set — Model CK-03 | Direct Manufacturer RR Foundations",
+    "seoDescription": "Sleek capsule-oval and notched-rectangle crystal keychains designed for delivery fleets and automotive brands. Factory direct pricing.",
+    "aliases": [
+      "cryctal-keychain-model-ck-03",
+      "crystal-keychain-model-ck-03"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_04",
+    "title": "Industrial & Healthcare Crystal Keychain Trio — Model CK-04",
+    "slug": "industrial-healthcare-crystal-keychain-trio-model-ck-04",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "Heavy-duty crystal keyrings with shield, rectangle, and round acrylic bodies for industrial and pharmaceutical branding.",
+    "fullDescription": "Built for building material manufacturers, pharmaceutical awareness campaigns, and automotive battery distributor networks. Encased in high-clarity scratch-resistant acrylic windows with rigid perimeter seals.",
+    "thumbnail": "/assets/products/crystal-keychain-004.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-004.jpeg"
+    ],
+    "materials": [
+      "High-Impact Acrylic",
+      "Gloss Coated Offset Card Insert",
+      "Steel Link Chain & Keyring"
+    ],
+    "specifications": {
+      "Body Styles": "Classic Round (40mm), Slim Rectangle (50x24mm), Shield (48x32mm)",
+      "Chain Attachment": "4-Link Heavy Curb Chain + Tempered Split Ring",
+      "Double-Sided": "Yes, Dual Brand / Dealer Contact Space",
+      "Print Resolution": "Offset Micro-Dot High Definition Print"
+    },
+    "featured": false,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Industrial Keychain",
+      "Pharma Merchandise",
+      "Battery Dealer Keychain"
+    ],
+    "seoTitle": "Industrial & Healthcare Crystal Keychain Trio — Model CK-04 | RR Foundations",
+    "seoDescription": "Heavy-duty crystal keyrings with shield, rectangle, and round acrylic bodies for industrial and pharmaceutical branding. Direct manufacturer New Delhi.",
+    "aliases": [
+      "cryctal-keychain-model-ck-04",
+      "crystal-keychain-model-ck-04"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_05",
+    "title": "Vibrant Yellow Oval Frame Crystal Keychain — Model CK-05",
+    "slug": "vibrant-yellow-oval-frame-crystal-keychain-model-ck-05",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "Eye-catching canary yellow molded border with crystal-clear center display window for beverage and retail gifting.",
+    "fullDescription": "Combines an impact-resistant colored polymer outer border with a crystal clear viewing window on both sides. High-contrast framing accentuates company logos, FMCG tea/beverage branding, and distributor contact details.",
+    "thumbnail": "/assets/products/crystal-keychain-005.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-005.jpeg"
+    ],
+    "materials": [
+      "Colored High-Density Polymer Frame",
+      "Crystal Clear Acrylic Inlay",
+      "Tempered Nickel Split Ring"
+    ],
+    "specifications": {
+      "Frame Color": "Signal Yellow (Custom PMS on Volume)",
+      "Window Size": "45 x 25 mm Oval Aperture",
+      "Overall Length": "85 mm including split ring",
+      "Branding Area": "Full Color Front & Back Graphic Insert"
+    },
+    "featured": false,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Yellow Frame Keychain",
+      "FMCG Promotional Gifts",
+      "Retail Merchandise"
+    ],
+    "seoTitle": "Vibrant Yellow Oval Frame Crystal Keychain — Model CK-05 | RR Foundations",
+    "seoDescription": "Canary yellow molded border with crystal-clear center display window for beverage and retail gifting. Direct factory pricing.",
+    "aliases": [
+      "cryctal-keychain-model-ck-05",
+      "crystal-keychain-model-ck-05"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_06",
+    "title": "Contoured Gold-Tone Border Crystal Keychain — Model CK-06",
+    "slug": "contoured-gold-tone-border-crystal-keychain-model-ck-06",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "Elegantly contoured yellow frame crystal keychain crafted for luxury jewelry showrooms and retail inaugurations.",
+    "fullDescription": "Featuring a distinct tapered contour border in radiant golden yellow, housing a double-sided crystal clear window. Ideal for jewelry house customer giveaways, wedding return gifts, festive retail promotions, and showroom celebrations.",
+    "thumbnail": "/assets/products/crystal-keychain-006.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-006.jpeg"
+    ],
+    "materials": [
+      "High-Gloss Polymer Housing",
+      "Ultra-Clear Acrylic Shield",
+      "Nickel Plated Steel O-Ring"
+    ],
+    "specifications": {
+      "Overall Dimensions": "62 x 34 mm",
+      "Insert Window": "42 x 22 mm",
+      "Frame Color": "Golden Yellow Luster",
+      "Unit Weight": "18 grams",
+      "Customization": "Jewelry Logo Front + Address / Branch Info Back"
+    },
+    "featured": false,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Jewellery Keychain",
+      "Golden Frame Keychain",
+      "Luxury Return Gift"
+    ],
+    "seoTitle": "Contoured Gold-Tone Border Crystal Keychain — Model CK-06 | RR Foundations",
+    "seoDescription": "Elegantly contoured yellow frame crystal keychain crafted for luxury jewelry showrooms and festive promotions. Direct manufacturer.",
+    "aliases": [
+      "cryctal-keychain-model-ck-06",
+      "crystal-keychain-model-ck-06"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_07",
+    "title": "Royal Blue Border Rectangle Crystal Keychain — Model CK-07",
+    "slug": "royal-blue-border-rectangle-crystal-keychain-model-ck-07",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "Deep royal blue frame crystal keychain with rectangular viewing aperture for premium lifestyle and luxury jewelry brands.",
+    "fullDescription": "Engineered with a rich cobalt blue molded outer perimeter and high-transparency crystal lens. Protects fine micro-typography, brand logos, and showroom details against scratches, water drops, and daily pocket wear.",
+    "thumbnail": "/assets/products/crystal-keychain-007.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-007.jpeg"
+    ],
+    "materials": [
+      "Cobalt Blue Molded Resin",
+      "Optical Acrylic Front & Back",
+      "Nickel Jump Ring & Split Ring"
+    ],
+    "specifications": {
+      "Dimensions": "58 x 30 mm",
+      "Border Color": "Cobalt Royal Blue",
+      "Attachment": "Reinforced Top Eyelet + Swivel Split Ring",
+      "Target Sectors": "Jewelry Boutiques, Luxury Lifestyle, Real Estate"
+    },
+    "featured": false,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Blue Border Keychain",
+      "Luxury Design Keychain",
+      "Corporate Gifting"
+    ],
+    "seoTitle": "Royal Blue Border Rectangle Crystal Keychain — Model CK-07 | RR Foundations",
+    "seoDescription": "Deep royal blue frame crystal keychain with rectangular viewing aperture for premium lifestyle and luxury jewelry brands. Factory direct.",
+    "aliases": [
+      "cryctal-keychain-model-ck-07",
+      "crystal-keychain-model-ck-07"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_08",
+    "title": "Teardrop Clear Crystal Acrylic Keychain — Model CK-08",
+    "slug": "teardrop-clear-crystal-acrylic-keychain-model-ck-08",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "All-transparent aerodynamic teardrop crystal keychain designed for motorcycle helmet and automotive accessory brands.",
+    "fullDescription": "Sleek aerodynamic teardrop profile manufactured from 100% virgin crystal clear acrylic. Features an integrated top mounting lug and sonically sealed dual-sided graphics chamber with radiused edges for effortless pocket slip.",
+    "thumbnail": "/assets/products/crystal-keychain-008.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-008.jpeg"
+    ],
+    "materials": [
+      "Virgin Optical Grade Acrylic",
+      "Synthetic Waterproof Graphic Film",
+      "Heavy Gauge Steel Ring"
+    ],
+    "specifications": {
+      "Profile": "Aerodynamic Teardrop / Pear Shape",
+      "Dimensions": "60 x 38 mm",
+      "Edge Profile": "Full 360-Degree Radiused Smooth Edge",
+      "Recommended For": "Automotive, Helmet Dealers, Biker Clubs, Sports Brands"
+    },
+    "featured": false,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Teardrop Keychain",
+      "Helmet Keychain",
+      "Automobile Keychain"
+    ],
+    "seoTitle": "Teardrop Clear Crystal Acrylic Keychain — Model CK-08 | RR Foundations",
+    "seoDescription": "All-transparent aerodynamic teardrop crystal keychain designed for motorcycle helmet and automotive brands. Manufactured in New Delhi.",
+    "aliases": [
+      "cryctal-keychain-model-ck-08",
+      "crystal-keychain-model-ck-08"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_09",
+    "title": "Transparent Oval Crystal Motorcycle Keychain — Model CK-09",
+    "slug": "transparent-oval-crystal-motorcycle-keychain-model-ck-09",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "Precision oval transparent crystal keychain engineered for automotive showrooms, two-wheeler keys, and bike launches.",
+    "fullDescription": "Classic oval crystal acrylic keychain offering exceptional clarity and scratch resistance. Designed to comfortably fit inside motorcycle ignition wells without scratching adjacent instrument dials or painted petrol tanks.",
+    "thumbnail": "/assets/products/crystal-keychain-009.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-009.jpeg"
+    ],
+    "materials": [
+      "Clear Impact-Modified Acrylic",
+      "UV Printed Photographic Insert",
+      "Reinforced Nickel Key Loop"
+    ],
+    "specifications": {
+      "Dimensions": "65 x 30 mm",
+      "Shape": "Elongated Oval",
+      "Ring Spec": "25 mm Heavy Spring Ring with Solid Eyelet",
+      "Customization": "Motorcycle Model, Showroom Name & 24x7 Roadside Assistance Info"
+    },
+    "featured": false,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Bike Keychain",
+      "Motorcycle Keychain",
+      "Two Wheeler Keychain"
+    ],
+    "seoTitle": "Transparent Oval Crystal Motorcycle Keychain — Model CK-09 | RR Foundations",
+    "seoDescription": "Precision oval transparent crystal keychain engineered for automotive showrooms, two-wheeler keys, and bike launches. Factory direct.",
+    "aliases": [
+      "cryctal-keychain-model-ck-09",
+      "crystal-keychain-model-ck-09"
+    ]
+  },
+  {
+    "id": "prod_crystal-keychain_010",
+    "title": "Scarlet Red Border Crystal Keychain — Model CK-10",
+    "slug": "scarlet-red-border-crystal-keychain-model-ck-10",
+    "category": "crystal-keychain",
+    "categoryName": "Crystal Keychain",
+    "shortDescription": "High-visibility crimson red frame crystal keychain designed for food delivery fleets and restaurant partners.",
+    "fullDescription": "Vibrant scarlet red frame providing maximum pocket and counter visibility. Fitted with an ultra-clear snap-in acrylic window for full-color partner branding, promotional QR codes, and delivery rider fleet identifications.",
+    "thumbnail": "/assets/products/crystal-keychain-010.jpeg",
+    "images": [
+      "/assets/products/crystal-keychain-010.jpeg"
+    ],
+    "materials": [
+      "Impact-Grade Scarlet Polymer",
+      "Scratch-Resistant Acrylic Window",
+      "Chrome Plated Key Ring"
+    ],
+    "specifications": {
+      "Dimensions": "60 x 32 mm",
+      "Frame Finish": "Bright Red (Pantone 186 C Matched)",
+      "Insert Area": "45 x 22 mm Double-Sided Window",
+      "Applications": "Food Delivery, Logistics, Courier Services, Restaurant Brands"
+    },
+    "featured": false,
+    "minQuantity": 100,
+    "tags": [
+      "Crystal Keychain",
+      "Cryctal Keychain",
+      "Red Frame Keychain",
+      "Delivery Fleet Keychain",
+      "Quick Commerce Merchandise"
+    ],
+    "seoTitle": "Scarlet Red Border Crystal Keychain — Model CK-10 | RR Foundations",
+    "seoDescription": "High-visibility crimson red frame crystal keychain designed for food delivery fleets and restaurant partners. Direct manufacturer RR Foundations.",
+    "aliases": [
+      "cryctal-keychain-model-ck-10",
+      "crystal-keychain-model-ck-10"
+    ]
   }
 ];
