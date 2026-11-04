@@ -146,8 +146,9 @@ In strict adherence to catalogue management standards, products sharing common c
 | `examboards-stationery` | Exam Boards & Desk Stationery | 21 | 0 | **21** |
 | `photo-frames-awards` | Photo Frames & Awards | 20 | 3 (`FR-02`, `FR-03`, `FR-09`) | **17** |
 | `keychains-acrylic-crafts` | Keychains & Acrylic Crafts | 17 | 1 (`KC-17`) | **16** |
+| `writing-pads` | Writing Pads *(New Category)* | — | 0 | **5** |
 | `lanyards-credentials` | Lanyards & Identification | 12 | 0 | **12** |
-| **TOTAL** | | **268** | **5** | **263** |
+| **TOTAL** | | **268** | **5** | **268** |
 
 ---
 

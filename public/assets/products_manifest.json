@@ -2365,5 +2365,50 @@
     "catName": "Badges & Lapel Pins",
     "rawCategory": "Badge Pin",
     "size": 250245
+  },
+  {
+    "originalName": "writing-pad-ortex-auto.jpg",
+    "cleanName": "writing-pad-ortex-auto.jpg",
+    "publicPath": "/assets/products/writing-pad-ortex-auto.jpg",
+    "catSlug": "writing-pads",
+    "catName": "Writing Pads",
+    "rawCategory": "Writing Pad",
+    "size": 222957
+  },
+  {
+    "originalName": "writing-pad-ortex-switches.jpg",
+    "cleanName": "writing-pad-ortex-switches.jpg",
+    "publicPath": "/assets/products/writing-pad-ortex-switches.jpg",
+    "catSlug": "writing-pads",
+    "catName": "Writing Pads",
+    "rawCategory": "Writing Pad",
+    "size": 174441
+  },
+  {
+    "originalName": "writing-pad-medinetix-healthcare.jpg",
+    "cleanName": "writing-pad-medinetix-healthcare.jpg",
+    "publicPath": "/assets/products/writing-pad-medinetix-healthcare.jpg",
+    "catSlug": "writing-pads",
+    "catName": "Writing Pads",
+    "rawCategory": "Writing Pad",
+    "size": 194552
+  },
+  {
+    "originalName": "writing-pad-puma-footwear.jpg",
+    "cleanName": "writing-pad-puma-footwear.jpg",
+    "publicPath": "/assets/products/writing-pad-puma-footwear.jpg",
+    "catSlug": "writing-pads",
+    "catName": "Writing Pads",
+    "rawCategory": "Writing Pad",
+    "size": 253121
+  },
+  {
+    "originalName": "writing-pad-triconix-cables.jpg",
+    "cleanName": "writing-pad-triconix-cables.jpg",
+    "publicPath": "/assets/products/writing-pad-triconix-cables.jpg",
+    "catSlug": "writing-pads",
+    "catName": "Writing Pads",
+    "rawCategory": "Writing Pad",
+    "size": 223610
   }
 ]

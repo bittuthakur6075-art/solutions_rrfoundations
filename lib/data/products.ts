@@ -618,8 +618,9 @@ export const PRODUCTS: Product[] = [
     "categoryName": "Badges & Lapel Pins",
     "shortDescription": "Direct factory manufactured metal and acrylic lapel badge with secure backing options for corporate and institutional branding.",
     "fullDescription": "Engineered at our Om Vihar facility, this badge model delivers crisp visual reproduction via direct UV flatbed printing or fiber laser etching. Available with high-flux neodymium magnetic fasteners to preserve apparel or heavy-duty safety pin clasps.",
-    "thumbnail": "/assets/products/badge-001.png",
+    "thumbnail": "/assets/products/category-badge-showcase.jpg",
     "images": [
+      "/assets/products/category-badge-showcase.jpg",
       "/assets/products/badge-001.png"
     ],
     "materials": [
@@ -2934,8 +2935,9 @@ export const PRODUCTS: Product[] = [
     "categoryName": "Keychains & Acrylic Crafts",
     "shortDescription": "Solid metal or laser-cut acrylic promotional keychain with reinforced split ring.",
     "fullDescription": "Designed for automotive dealerships, real estate brands, and corporate launches. Stamped in heavyweight zinc alloy or laser-cut from high-impact tinted acrylic with double-sided branding.",
-    "thumbnail": "/assets/products/craft-001.png",
+    "thumbnail": "/assets/products/category-keychain-showcase.jpg",
     "images": [
+      "/assets/products/category-keychain-showcase.jpg",
       "/assets/products/craft-001.png"
     ],
     "materials": [
@@ -5670,8 +5672,9 @@ export const PRODUCTS: Product[] = [
     "categoryName": "Custom Fridge Magnets & Souvenirs",
     "shortDescription": "Vibrant full-color promotional fridge magnet with heavy-duty flexible magnetic backing.",
     "fullDescription": "Produced using high-clarity cast acrylic or high-density flexible rubberized magnets. Provides maximum brand exposure on metal surfaces with photographic image fidelity that resists yellowing and fading.",
-    "thumbnail": "/assets/products/magnet-001.jpeg",
+    "thumbnail": "/assets/products/category-magnet-showcase.jpg",
     "images": [
+      "/assets/products/category-magnet-showcase.jpg",
       "/assets/products/magnet-001.jpeg"
     ],
     "materials": [
@@ -9231,5 +9234,195 @@ export const PRODUCTS: Product[] = [
     ],
     "seoTitle": "Mechanical Gear & Designer Wall Clock — Model WC-60 | Direct Manufacturer RR Foundations",
     "seoDescription": "Architectural wall timepiece with intricate moving gear mechanisms or precision laser-cut MDF acrylic casing. Manufactured in Delhi by RR Foundations."
+  },
+  {
+    "id": "prod_writing-pads_01",
+    "title": "Ortex Industries Automotive Parts Custom Writing Pad",
+    "slug": "ortex-industries-automotive-parts-custom-writing-pad",
+    "category": "writing-pads",
+    "categoryName": "Writing Pads",
+    "shortDescription": "Heavy-duty branded promotional writing pad manufactured for Ortex Industries featuring high-definition automotive component showcase.",
+    "fullDescription": "Engineered at RR Foundations New Delhi facility for Ortex Industries, this premium writing pad showcases genuine factory branding and automotive parts graphics. Built on a rigid shatter-resistant composite board with a heavy-duty chrome spring clip, chamfered safety edges, and back-surface scratchproof UV printing.",
+    "thumbnail": "/assets/products/writing-pad-ortex-auto.jpg",
+    "images": [
+      "/assets/products/writing-pad-ortex-auto.jpg"
+    ],
+    "materials": [
+      "High-Impact Acrylic / Rigid Board",
+      "Chrome Plated Spring Clip",
+      "Scratch-Resistant UV Print"
+    ],
+    "specifications": {
+      "Company": "Ortex Industries",
+      "Product Type": "Promotional Writing Pad / Clipboard",
+      "Dimensions": "Standard A4 (215 x 310 mm)",
+      "Thickness": "3.5mm Rigid Substrate",
+      "Clip Mechanism": "Heavy-Duty Chrome Wire Spring Clamp",
+      "Print Quality": "1440 DPI Full-Bleed UV Digital Print"
+    },
+    "featured": true,
+    "minQuantity": 50,
+    "tags": [
+      "Writing Pad",
+      "Clipboard",
+      "Ortex Industries",
+      "Automotive",
+      "Corporate Stationery",
+      "Custom Print"
+    ],
+    "seoTitle": "Ortex Industries Automotive Parts Custom Writing Pad | RR Foundations",
+    "seoDescription": "Custom manufactured Ortex Industries promotional writing pad with durable clamp and full-color direct UV print by RR Foundations."
+  },
+  {
+    "id": "prod_writing-pads_02",
+    "title": "Ortex Industries Modular Switches Promotional Writing Pad",
+    "slug": "ortex-industries-modular-switches-promotional-writing-pad",
+    "category": "writing-pads",
+    "categoryName": "Writing Pads",
+    "shortDescription": "Sleek corporate promotional writing pad for Ortex Industries featuring modular switches and electrical accessories showcase.",
+    "fullDescription": "Precision-manufactured promotional clipboard for Ortex Industries Electrical Division. Combines vibrant high-gloss UV graphics with an ultra-durable composite core, engineered for electrical dealers, field contractors, and corporate office presentations.",
+    "thumbnail": "/assets/products/writing-pad-ortex-switches.jpg",
+    "images": [
+      "/assets/products/writing-pad-ortex-switches.jpg"
+    ],
+    "materials": [
+      "Cast Acrylic / High-Density Board",
+      "Polished Chrome Spring Clamp",
+      "UV Gloss Topcoat"
+    ],
+    "specifications": {
+      "Company": "Ortex Industries",
+      "Product Type": "Promotional Writing Pad / Clipboard",
+      "Dimensions": "Standard A4 (215 x 310 mm)",
+      "Thickness": "3.5mm Rigid Substrate",
+      "Clip Mechanism": "Heavy-Duty Chrome Wire Spring Clamp",
+      "Print Quality": "1440 DPI Full-Bleed UV Digital Print"
+    },
+    "featured": true,
+    "minQuantity": 50,
+    "tags": [
+      "Writing Pad",
+      "Clipboard",
+      "Ortex Industries",
+      "Electrical",
+      "Modular Switches",
+      "Corporate Stationery"
+    ],
+    "seoTitle": "Ortex Industries Modular Switches Promotional Writing Pad | RR Foundations",
+    "seoDescription": "Corporate Ortex Industries modular switches promotional writing pad manufactured with premium finish by RR Foundations."
+  },
+  {
+    "id": "prod_writing-pads_03",
+    "title": "Medinetix Healthcare Medical Equipment Custom Writing Pad",
+    "slug": "medinetix-healthcare-medical-equipment-custom-writing-pad",
+    "category": "writing-pads",
+    "categoryName": "Writing Pads",
+    "shortDescription": "Clinical-grade customized writing pad for Medinetix Healthcare featuring institutional diagnostic branding.",
+    "fullDescription": "Manufactured specifically for healthcare professionals, hospitals, and clinical diagnostics. Features Medinetix Healthcare 3D logo branding, hygienic non-porous wipe-clean surface, smooth rounded safety corners, and an ergonomic firm-grip document clamp.",
+    "thumbnail": "/assets/products/writing-pad-medinetix-healthcare.jpg",
+    "images": [
+      "/assets/products/writing-pad-medinetix-healthcare.jpg"
+    ],
+    "materials": [
+      "Medical-Grade Acrylic / Rigid Board",
+      "Rustproof Chrome Steel Clip",
+      "Hygienic Wipe-Clean Topcoat"
+    ],
+    "specifications": {
+      "Company": "Medinetix Healthcare",
+      "Product Type": "Medical Writing Pad / Patient Chart Board",
+      "Dimensions": "Standard A4 (215 x 310 mm)",
+      "Thickness": "3.5mm Rigid Substrate",
+      "Clip Mechanism": "High-Tension Rustproof Steel Clamp",
+      "Surface Finish": "Non-Porous Antibacterial Wipe-Clean"
+    },
+    "featured": false,
+    "minQuantity": 50,
+    "tags": [
+      "Writing Pad",
+      "Clipboard",
+      "Medinetix Healthcare",
+      "Hospital",
+      "Medical",
+      "Clinical Chart"
+    ],
+    "seoTitle": "Medinetix Healthcare Medical Equipment Custom Writing Pad | RR Foundations",
+    "seoDescription": "Custom clinical writing pad for Medinetix Healthcare with hygienic wipe-clean finish manufactured by RR Foundations."
+  },
+  {
+    "id": "prod_writing-pads_04",
+    "title": "Puma Footwear Pvt. Ltd. Exclusive Footwear Writing Pad",
+    "slug": "puma-footwear-pvt-ltd-exclusive-footwear-writing-pad",
+    "category": "writing-pads",
+    "categoryName": "Writing Pads",
+    "shortDescription": "Retail dealership promotional writing pad manufactured for Puma Footwear Pvt. Ltd. displaying product line catalogue.",
+    "fullDescription": "Custom wholesale dealership writing pad manufactured for Puma Footwear Pvt. Ltd. (Abu Road, Rajasthan). Features high-contrast full-color product lineup showcase with complete company credentials, reinforced edges, and heavy-gauge steel document clip for order processing.",
+    "thumbnail": "/assets/products/writing-pad-puma-footwear.jpg",
+    "images": [
+      "/assets/products/writing-pad-puma-footwear.jpg"
+    ],
+    "materials": [
+      "High-Durability Acrylic / Rigid Board",
+      "Electroplated Steel Clip",
+      "Fade-Proof UV Print"
+    ],
+    "specifications": {
+      "Company": "Puma Footwear Pvt. Ltd.",
+      "Product Type": "Dealer Catalogue Writing Pad / Order Pad",
+      "Dimensions": "Standard A4 (215 x 310 mm)",
+      "Thickness": "3.5mm Rigid Substrate",
+      "Clip Mechanism": "Heavy-Duty Chrome Wire Spring Clamp",
+      "Print Quality": "Full-Color Double-Pass UV Flatbed"
+    },
+    "featured": false,
+    "minQuantity": 50,
+    "tags": [
+      "Writing Pad",
+      "Clipboard",
+      "Puma Footwear",
+      "Footwear",
+      "Retail Merchandise",
+      "Order Pad"
+    ],
+    "seoTitle": "Puma Footwear Pvt. Ltd. Exclusive Footwear Writing Pad | RR Foundations",
+    "seoDescription": "Puma Footwear Pvt. Ltd. custom wholesale order writing pad with full-color catalogue print by RR Foundations."
+  },
+  {
+    "id": "prod_writing-pads_05",
+    "title": "Triconix Wires & Cables Industrial Suraksha Writing Pad",
+    "slug": "triconix-wires-cables-industrial-suraksha-writing-pad",
+    "category": "writing-pads",
+    "categoryName": "Writing Pads",
+    "shortDescription": "Heavy-duty industrial promotional writing pad manufactured for Triconix Wires & Cables featuring Suraksha Zindagi Ki campaign.",
+    "fullDescription": "Engineered for industrial electrical contractors, distribution networks, and wholesale depots of Triconix Wires & Cables. Built to withstand rough job site conditions with impact-resistant rigid board backing and vibrant scratch-resistant UV flatbed printing.",
+    "thumbnail": "/assets/products/writing-pad-triconix-cables.jpg",
+    "images": [
+      "/assets/products/writing-pad-triconix-cables.jpg"
+    ],
+    "materials": [
+      "Industrial-Grade Rigid Composite / Acrylic",
+      "Heavy-Duty Wire Clip",
+      "Weather-Resistant UV Print"
+    ],
+    "specifications": {
+      "Company": "Triconix Wires & Cables",
+      "Product Type": "Industrial Promotional Writing Pad / Site Board",
+      "Dimensions": "Standard A4 (215 x 310 mm)",
+      "Thickness": "3.5mm Rigid Substrate",
+      "Clip Mechanism": "Heavy-Duty Chrome Spring Clamp",
+      "Print Quality": "Scratch-Resistant Industrial UV Print"
+    },
+    "featured": false,
+    "minQuantity": 50,
+    "tags": [
+      "Writing Pad",
+      "Clipboard",
+      "Triconix",
+      "Wires & Cables",
+      "Industrial",
+      "Job Site Board"
+    ],
+    "seoTitle": "Triconix Wires & Cables Industrial Suraksha Writing Pad | RR Foundations",
+    "seoDescription": "Triconix Wires & Cables promotional industrial writing pad with Suraksha campaign print manufactured by RR Foundations."
   }
 ];

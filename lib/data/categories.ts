@@ -6,7 +6,7 @@ export const CATEGORIES: Category[] = [
     "name": "Badges & Lapel Pins",
     "slug": "badges-lapel-pins",
     "description": "In-house manufactured stainless steel name badges, magnetic fastener badges, die-struck brass lapel pins, acrylic badges, and political campaign insignias.",
-    "image": "/assets/products/badge-001.png",
+    "image": "/assets/products/category-badge-showcase.jpg",
     "featuredProductCount": 45,
     "highlights": [
       "Pure copper & steel cores",
@@ -48,7 +48,7 @@ export const CATEGORIES: Category[] = [
     "name": "Custom Fridge Magnets & Souvenirs",
     "slug": "magnets-souvenirs",
     "description": "Vibrant custom-shaped acrylic fridge magnets, embossed rubberized magnets, and commemorative corporate & tourism souvenir plaques.",
-    "image": "/assets/products/magnet-001.jpeg",
+    "image": "/assets/products/category-magnet-showcase.jpg",
     "featuredProductCount": 42,
     "highlights": [
       "High-strength isotropic magnetic backing",
@@ -104,13 +104,27 @@ export const CATEGORIES: Category[] = [
     "name": "Keychains & Acrylic Crafts",
     "slug": "keychains-acrylic-crafts",
     "description": "Custom die-struck metal keychains, laser-cut acrylic key tags, molded silicone accessories, and desktop paperweights.",
-    "image": "/assets/products/craft-001.png",
+    "image": "/assets/products/category-keychain-showcase.jpg",
     "featuredProductCount": 16,
     "highlights": [
       "Heavyweight zinc alloy & brass stamping",
       "Crystal clear edge-polished acrylic",
       "Heavy nickel split ring & chain",
       "Bespoke company shapes and 3D reliefs"
+    ]
+  },
+  {
+    "id": "writing-pads",
+    "name": "Writing Pads",
+    "slug": "writing-pads",
+    "description": "Customized corporate and industrial promotional writing pads, clipboards, and branded examination pads manufactured with high-durability acrylic, MDF, and heavy-duty wire clips.",
+    "image": "/assets/products/writing-pad-ortex-auto.jpg",
+    "featuredProductCount": 5,
+    "highlights": [
+      "Direct UV flatbed high-definition print",
+      "Reinforced acrylic & moisture-proof board",
+      "Chrome plated rustproof heavy spring clip",
+      "Tailored institutional & corporate branding"
     ]
   }
 ];
