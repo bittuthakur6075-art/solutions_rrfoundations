@@ -26,6 +26,7 @@ export const Image: React.FC<ImageProps> = ({
     : { ...style };
 
   return (
+    // eslint-disable-next-line @next/next/no-img-element
     <img
       alt={alt}
       loading={loading || (priority ? "eager" : "lazy")}

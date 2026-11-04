@@ -20,8 +20,10 @@ export function useSearchParams() {
   return searchParams;
 }
 
-export default {
+const navigation = {
   usePathname,
   useRouter,
   useSearchParams,
 };
+
+export default navigation;
