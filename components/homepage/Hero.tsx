@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
-  LayoutGrid,
+  Package,
   SlidersHorizontal,
   Factory,
-  Layers,
-  Box,
+  Palette,
+  Boxes,
   Truck,
 } from "lucide-react";
 
@@ -25,12 +25,12 @@ export function Hero({ onOpenQuote }: HeroProps) {
       line2: "Manufacturing",
     },
     {
-      icon: Layers,
+      icon: Palette,
       line1: "Custom",
       line2: "Branding",
     },
     {
-      icon: Box,
+      icon: Boxes,
       line1: "Bulk",
       line2: "Production",
     },
@@ -57,24 +57,24 @@ export function Hero({ onOpenQuote }: HeroProps) {
             <div className="flex items-center gap-3">
               <span className="w-8 h-[2px] bg-[#D9B878]" />
               <span className="text-[#D9B878] text-xs sm:text-[13px] font-heading font-bold uppercase tracking-[0.22em]">
-                MANUFACTURING &amp; CUSTOM PRODUCT SOLUTIONS
+                DIRECT FACTORY &amp; CUSTOM PRODUCT SOLUTIONS
               </span>
             </div>
 
             {/* Display Headline: "Manufacturing Ideas Into Products That Matter." */}
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-[54px] xl:text-[62px] text-white tracking-tight leading-[1.08] font-normal">
-              Manufacturing Ideas
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[58px] text-white tracking-tight leading-[1.12] font-normal">
+              <span className="whitespace-normal sm:whitespace-nowrap">Manufacturing Ideas</span>
               <br />
-              Into Products
-              <br />
-              <span className="font-serif italic font-normal text-[#D9B878]">
+              <span>Into Products </span>
+              <br className="hidden sm:inline" />
+              <span className="font-serif italic font-normal text-[#D9B878] whitespace-nowrap">
                 That Matter.
               </span>
             </h1>
 
-            {/* Supporting Copy */}
+            {/* Supporting Copy / Sub-lead */}
             <p className="text-white/85 text-base sm:text-lg leading-relaxed max-w-lg font-sans font-light">
-              Explore a wide range of high-quality, customised and bulk manufactured products for businesses, institutions and events.
+              Direct factory manufacturing for bespoke corporate merchandise, identity products, and institutional stationery — engineered in-house with calibrated precision and delivered Pan-India.
             </p>
 
             {/* Two Action Buttons side-by-side */}
@@ -84,9 +84,9 @@ export function Hero({ onOpenQuote }: HeroProps) {
                 href="/products"
                 className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#D9B878] hover:bg-[#E8CB8D] text-[#102A25] font-heading font-bold text-sm sm:text-base transition-all duration-200 shadow-gold group active:translate-y-0.5"
               >
-                <LayoutGrid className="w-4 h-4 text-[#102A25]" />
+                <Package className="w-4 h-4 text-[#102A25]" strokeWidth={1.75} />
                 <span>Explore Products</span>
-                <ArrowRight className="w-4 h-4 text-[#102A25] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-[#102A25] group-hover:translate-x-1 transition-transform" strokeWidth={1.75} />
               </Link>
 
               {/* Secondary Outlined CTA */}
@@ -94,7 +94,7 @@ export function Hero({ onOpenQuote }: HeroProps) {
                 onClick={onOpenQuote}
                 className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl border border-white/25 hover:border-[#D9B878] text-white hover:text-[#D9B878] bg-white/5 hover:bg-white/10 transition-all duration-200 font-heading font-semibold text-sm sm:text-base active:translate-y-0.5 backdrop-blur-sm"
               >
-                <SlidersHorizontal className="w-4 h-4" />
+                <SlidersHorizontal className="w-4 h-4" strokeWidth={1.75} />
                 <span>Discuss Your Requirement</span>
               </button>
             </div>
