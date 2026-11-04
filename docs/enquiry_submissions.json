@@ -1,0 +1,26 @@
+[
+  {
+    "id": "enq_1793702130962_6z3qp",
+    "timestamp": "2026-11-03T10:35:30.962Z",
+    "fullName": "Test Procurement Manager",
+    "companyName": "Apex Enterprises",
+    "email": "test@apex.example",
+    "phone": "+919876543210",
+    "productName": "Customized Metal Name Badges",
+    "quantity": "500",
+    "message": "Requesting sample proof and bulk quotation.",
+    "status": "New"
+  },
+  {
+    "id": "enq_1793704269539_44nt6",
+    "timestamp": "2026-11-03T11:11:09.539Z",
+    "fullName": "B2B Procurement Director",
+    "companyName": "Heritage Hotels Group",
+    "email": "procurement@heritagehotels.example",
+    "phone": "+919876543210",
+    "productName": "Customized Metal Name Badges",
+    "quantity": "1000",
+    "message": "Requesting antique copper badge pin samples with custom laser engraved logo.",
+    "status": "New"
+  }
+]

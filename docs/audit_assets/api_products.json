@@ -1,0 +1,1063 @@
+﻿{
+    "products":  [
+                     {
+                         "id":  "prod_01KWZ5E3972617FNGC68ZSJXG4",
+                         "title":  "Copper Badge Pin - Circular with Clasp",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Elegant copper-finish circular badge pin with secure clasp backing. Premium quality construction ideal for corporate events, identification, and custom branding.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/cf9228ccdf37f622e943c12acad2a746.png",
+                         "slug":  "copper-badge-pin-circular-with-clasp",
+                         "url_handle":  "copper-badge-pin-circular-with-clasp",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -13,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5E3BXWW466DNR8E4G6HMV",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/cf9228ccdf37f622e943c12acad2a746.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "copper-badge-pin-circular-with-clasp",
+                                              "title":  "Copper Badge Pin - Circular with Clasp",
+                                              "description":  "Elegant copper-finish circular badge pin with secure clasp backing. Premium quality construction ideal for corporate events, identification, and custom branding.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "copper-badge-pin-circular-with-clasp",
+                                               "seoTitle":  "Copper Badge Pin - Circular with Clasp",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Elegant copper-finish circular badge pin with secure clasp backing. Premium quality construction ideal for corporate events, identification, and custom branding."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:48:40.208Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5DV6X15F56B6T668302E8",
+                         "title":  "Copper Safety Pin Badge - Circular",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Premium copper-finish circular safety pin badge with secure locking mechanism. Perfect for professional identification and event branding applications.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/f74054345654c63da2215c2dded30242.png",
+                         "slug":  "copper-safety-pin-badge-circular",
+                         "url_handle":  "copper-safety-pin-badge-circular",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -12,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5DV9Q3F8PBKRDSQ9936FE",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/f74054345654c63da2215c2dded30242.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "copper-safety-pin-badge-circular",
+                                              "title":  "Copper Safety Pin Badge - Circular",
+                                              "description":  "Premium copper-finish circular safety pin badge with secure locking mechanism. Perfect for professional identification and event branding applications.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "copper-safety-pin-badge-circular",
+                                               "seoTitle":  "Copper Safety Pin Badge - Circular",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Premium copper-finish circular safety pin badge with secure locking mechanism. Perfect for professional identification and event branding applications."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:48:31.932Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5DNKH2BPRRVMX85R0021Y",
+                         "title":  "Indian Flag Badge - Circular Metallic",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Metallic circular Indian flag badge with premium finish and vibrant colors. Ideal for official ceremonies, patriotic events, and national campaigns.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/fa7229007d8d2f0c71695f1f845aec35.png",
+                         "slug":  "indian-flag-badge-circular-metallic",
+                         "url_handle":  "indian-flag-badge-circular-metallic",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -11,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5DNRQH50ZBXM8WSA6M7NE",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/fa7229007d8d2f0c71695f1f845aec35.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "indian-flag-badge-circular-metallic",
+                                              "title":  "Indian Flag Badge - Circular Metallic",
+                                              "description":  "Metallic circular Indian flag badge with premium finish and vibrant colors. Ideal for official ceremonies, patriotic events, and national campaigns.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "indian-flag-badge-circular-metallic",
+                                               "seoTitle":  "Indian Flag Badge - Circular Metallic",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Metallic circular Indian flag badge with premium finish and vibrant colors. Ideal for official ceremonies, patriotic events, and national campaigns."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:48:26.131Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5DANV98NQ1D5WQRS6BY00",
+                         "title":  "Circular Metal Badge Pin",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Classic circular metal badge pin with polished finish and secure backing. Versatile design suitable for corporate events, identification, and promotional campaigns.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/dddc1e0c55f88c78074ed71c4f97c366.png",
+                         "slug":  "circular-metal-badge-pin",
+                         "url_handle":  "circular-metal-badge-pin",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -10,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5DARFY76ZK2Y58995MHJZ",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/dddc1e0c55f88c78074ed71c4f97c366.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "circular-metal-badge-pin",
+                                              "title":  "Circular Metal Badge Pin",
+                                              "description":  "Classic circular metal badge pin with polished finish and secure backing. Versatile design suitable for corporate events, identification, and promotional campaigns.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "circular-metal-badge-pin",
+                                               "seoTitle":  "Circular Metal Badge Pin",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Classic circular metal badge pin with polished finish and secure backing. Versatile design suitable for corporate events, identification, and promotional campaigns."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:48:14.999Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5CY6GBQX5GGDVQ8VG2P7M",
+                         "title":  "Indian Flag Badge - Vintage Style",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Vintage-style Indian flag badge with distressed finish and authentic patriotic design. Perfect for heritage events, cultural campaigns, and nostalgic branding.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/b3748088e315bb96492b90f1a0c444bf.png",
+                         "slug":  "indian-flag-badge-vintage-style",
+                         "url_handle":  "indian-flag-badge-vintage-style",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -9,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5CY9FNNGK2P7WB4J2YBCF",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/b3748088e315bb96492b90f1a0c444bf.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "indian-flag-badge-vintage-style",
+                                              "title":  "Indian Flag Badge - Vintage Style",
+                                              "description":  "Vintage-style Indian flag badge with distressed finish and authentic patriotic design. Perfect for heritage events, cultural campaigns, and nostalgic branding.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "indian-flag-badge-vintage-style",
+                                               "seoTitle":  "Indian Flag Badge - Vintage Style",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Vintage-style Indian flag badge with distressed finish and authentic patriotic design. Perfect for heritage events, cultural campaigns, and nostalgic branding."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:48:02.226Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5CH11V6MXZVWQEN2BS3HT",
+                         "title":  "Steel Safety Pin Badge",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Durable stainless steel safety pin badge with secure locking mechanism. Professional-grade construction for reliable identification and event branding.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/0337fea301c76f38c236736c08d55705.png",
+                         "slug":  "steel-safety-pin-badge",
+                         "url_handle":  "steel-safety-pin-badge",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -8,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5CH5R0MED8BMTMXBY4K82",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/0337fea301c76f38c236736c08d55705.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "steel-safety-pin-badge",
+                                              "title":  "Steel Safety Pin Badge",
+                                              "description":  "Durable stainless steel safety pin badge with secure locking mechanism. Professional-grade construction for reliable identification and event branding.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "steel-safety-pin-badge",
+                                               "seoTitle":  "Steel Safety Pin Badge",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Durable stainless steel safety pin badge with secure locking mechanism. Professional-grade construction for reliable identification and event branding."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:47:48.717Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5C52TTB48CTQVDH1SC5SY",
+                         "title":  "Indian Flag Badge - Rectangular",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Rectangular Indian flag badge with authentic colors and Ashoka Chakra design. Perfect for official events, campaigns, and patriotic merchandise displays.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/afb3a1179c80522683f66b92f1ea9695.png",
+                         "slug":  "indian-flag-badge-rectangular",
+                         "url_handle":  "indian-flag-badge-rectangular",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -7,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5C55H4QVY85RXSX3G9A61",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/afb3a1179c80522683f66b92f1ea9695.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "indian-flag-badge-rectangular",
+                                              "title":  "Indian Flag Badge - Rectangular",
+                                              "description":  "Rectangular Indian flag badge with authentic colors and Ashoka Chakra design. Perfect for official events, campaigns, and patriotic merchandise displays.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "indian-flag-badge-rectangular",
+                                               "seoTitle":  "Indian Flag Badge - Rectangular",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Rectangular Indian flag badge with authentic colors and Ashoka Chakra design. Perfect for official events, campaigns, and patriotic merchandise displays."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:47:36.510Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5BSNY3N0Z4VFP4C70G0D0",
+                         "title":  "Copper Badge Pin - Rectangular",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Elegant copper-finish rectangular badge pin with two-hole design for secure attachment. Ideal for corporate identification, events, and custom branding applications.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/3cea14e6c68ab6adafad6511a0f0ba6a.png",
+                         "slug":  "copper-badge-pin-rectangular",
+                         "url_handle":  "copper-badge-pin-rectangular",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -6,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5BSRM8FX4E1QSX7VNJ98H",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/3cea14e6c68ab6adafad6511a0f0ba6a.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "copper-badge-pin-rectangular",
+                                              "title":  "Copper Badge Pin - Rectangular",
+                                              "description":  "Elegant copper-finish rectangular badge pin with two-hole design for secure attachment. Ideal for corporate identification, events, and custom branding applications.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "copper-badge-pin-rectangular",
+                                               "seoTitle":  "Copper Badge Pin - Rectangular",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Elegant copper-finish rectangular badge pin with two-hole design for secure attachment. Ideal for corporate identification, events, and custom branding applications."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:47:24.837Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5B8Y3FS2AP5Q70T93VH5C",
+                         "title":  "Indian Flag Badge - Round Design",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Patriotic Indian flag badge with vibrant colors and Ashoka Chakra. Perfect for national events, campaigns, and patriotic merchandise. High-quality printing on durable material.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/9ae685c2a27c831aac2721430d562a9a.png",
+                         "slug":  "indian-flag-badge-round-design",
+                         "url_handle":  "indian-flag-badge-round-design",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -5,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5B90QTMFBBWVR5PZR13TX",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/9ae685c2a27c831aac2721430d562a9a.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "indian-flag-badge-round-design",
+                                              "title":  "Indian Flag Badge - Round Design",
+                                              "description":  "Patriotic Indian flag badge with vibrant colors and Ashoka Chakra. Perfect for national events, campaigns, and patriotic merchandise. High-quality printing on durable material.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "indian-flag-badge-round-design",
+                                               "seoTitle":  "Indian Flag Badge - Round Design",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Patriotic Indian flag badge with vibrant colors and Ashoka Chakra. Perfect for national events, campaigns, and patriotic merchandise. High-quality printing on durable material."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:47:07.689Z"
+                     },
+                     {
+                         "id":  "prod_01KWZ5ATDK7HT7K0N039J7QY6T",
+                         "title":  "Metal Badge Pin with Safety Clasp",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Premium metal badge pin with secure safety clasp backing, perfect for identification, events, and corporate branding. Durable construction with professional finish.",
+                         "thumbnail":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/18d4569c065de97f1c9199494975a905.png",
+                         "slug":  "metal-badge-pin-with-safety-clasp",
+                         "url_handle":  "metal-badge-pin-with-safety-clasp",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -4,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KWZ5ATGRW303WPEM6T94SD69",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://horizons-cdn.hostinger.com/4ab4ba6c-5f3e-4a04-9c27-9b8ded512b68/18d4569c065de97f1c9199494975a905.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "metal-badge-pin-with-safety-clasp",
+                                              "title":  "Metal Badge Pin with Safety Clasp",
+                                              "description":  "Premium metal badge pin with secure safety clasp backing, perfect for identification, events, and corporate branding. Durable construction with professional finish.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "metal-badge-pin-with-safety-clasp",
+                                               "seoTitle":  "Metal Badge Pin with Safety Clasp",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Premium metal badge pin with secure safety clasp backing, perfect for identification, events, and corporate branding. Durable construction with professional finish."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-07-07T20:46:52.818Z"
+                     },
+                     {
+                         "id":  "prod_01KW1TMNX8Y1R3MJ49047XRW3C",
+                         "title":  "Branded Corporate Gift Hampers",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Customized gift sets including pens, notebooks, and stationery with your company branding for employee engagement and client appreciation.",
+                         "thumbnail":  "https://images.hostinger.com/021c671d-97c6-493d-96e3-91a86e6d4663.png",
+                         "slug":  "branded-corporate-gift-hampers",
+                         "url_handle":  "branded-corporate-gift-hampers",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -3,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KW1TMNZ7Q4NRFBDRZV38VBPY",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://images.hostinger.com/021c671d-97c6-493d-96e3-91a86e6d4663.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "branded-corporate-gift-hampers",
+                                              "title":  "Branded Corporate Gift Hampers",
+                                              "description":  "Customized gift sets including pens, notebooks, and stationery with your company branding for employee engagement and client appreciation.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "branded-corporate-gift-hampers",
+                                               "seoTitle":  "Branded Corporate Gift Hampers",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Customized gift sets including pens, notebooks, and stationery with your company branding for employee engagement and client appreciation."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-06-26T11:22:03.007Z"
+                     },
+                     {
+                         "id":  "prod_01KW1TMG2TDF1S8YE2JRJJ0HRS",
+                         "title":  "Custom Design \u0026 Branding Consultation",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Professional design consultation service for your promotional products, including logo placement, color matching, and material selection guidance.",
+                         "thumbnail":  "https://images.hostinger.com/22641166-9438-4a0f-9474-7757c1fa93f2.png",
+                         "slug":  "custom-design-and-branding-consultation",
+                         "url_handle":  "custom-design-and-branding-consultation",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -2,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KW1TMG4RNAZDAGBA94CTDN86",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://images.hostinger.com/22641166-9438-4a0f-9474-7757c1fa93f2.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "service"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "custom-design-and-branding-consultation",
+                                              "title":  "Custom Design \u0026 Branding Consultation",
+                                              "description":  "Professional design consultation service for your promotional products, including logo placement, color matching, and material selection guidance.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "custom-design-and-branding-consultation",
+                                               "seoTitle":  "Custom Design \u0026 Branding Consultation",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Professional design consultation service for your promotional products, including logo placement, color matching, and material selection guidance."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-06-26T11:21:57.041Z"
+                     },
+                     {
+                         "id":  "prod_01KW1TMDVKVSMNDWAVME5F05NE",
+                         "title":  "Executive Promotional Clipboards",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "High-quality MDF clipboards with UV-printed custom branding, ideal for examinations, corporate gifts, and institutional use.",
+                         "thumbnail":  "https://images.hostinger.com/3130dcfb-81cb-4429-981c-6558997dfa06.png",
+                         "slug":  "executive-promotional-clipboards",
+                         "url_handle":  "executive-promotional-clipboards",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  -1,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KW1TMDXEF9XAQQ3WS60M7QTS",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://images.hostinger.com/3130dcfb-81cb-4429-981c-6558997dfa06.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "executive-promotional-clipboards",
+                                              "title":  "Executive Promotional Clipboards",
+                                              "description":  "High-quality MDF clipboards with UV-printed custom branding, ideal for examinations, corporate gifts, and institutional use.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "executive-promotional-clipboards",
+                                               "seoTitle":  "Executive Promotional Clipboards",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "High-quality MDF clipboards with UV-printed custom branding, ideal for examinations, corporate gifts, and institutional use."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-06-26T11:21:54.754Z"
+                     },
+                     {
+                         "id":  "prod_01KW1TMDCXCXKRMN0FPCJDF18W",
+                         "title":  "Event Conference ID Card Kits",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Complete conference branding solution including lanyards, ID card holders, and customized delegate cards for professional events.",
+                         "thumbnail":  "https://images.hostinger.com/5a2424ff-a346-43dd-8e7b-ae8c284eadc8.png",
+                         "slug":  "event-conference-id-card-kits",
+                         "url_handle":  "event-conference-id-card-kits",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  0,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KW1TMDF2KPD99CJXQRW5TDPB",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://images.hostinger.com/5a2424ff-a346-43dd-8e7b-ae8c284eadc8.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "event-conference-id-card-kits",
+                                              "title":  "Event Conference ID Card Kits",
+                                              "description":  "Complete conference branding solution including lanyards, ID card holders, and customized delegate cards for professional events.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "event-conference-id-card-kits",
+                                               "seoTitle":  "Event Conference ID Card Kits",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Complete conference branding solution including lanyards, ID card holders, and customized delegate cards for professional events."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-06-26T11:21:54.306Z"
+                     },
+                     {
+                         "id":  "prod_01KW1TMDFWW1M1X02B0ZKX8V9D",
+                         "title":  "Promotional T-Shirts \u0026 Apparel",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "High-quality customized t-shirts and apparel with full-color printing, perfect for campaigns, events, and brand activation.",
+                         "thumbnail":  "https://images.hostinger.com/d694b1d6-da20-44fb-91fe-f32d49d69bf8.png",
+                         "slug":  "promotional-t-shirts-and-apparel",
+                         "url_handle":  "promotional-t-shirts-and-apparel",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  0,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KW1TMDJFJ3Q55ZY0YRVR5TWH",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://images.hostinger.com/d694b1d6-da20-44fb-91fe-f32d49d69bf8.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "promotional-t-shirts-and-apparel",
+                                              "title":  "Promotional T-Shirts \u0026 Apparel",
+                                              "description":  "High-quality customized t-shirts and apparel with full-color printing, perfect for campaigns, events, and brand activation.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "promotional-t-shirts-and-apparel",
+                                               "seoTitle":  "Promotional T-Shirts \u0026 Apparel",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "High-quality customized t-shirts and apparel with full-color printing, perfect for campaigns, events, and brand activation."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-06-26T11:21:54.395Z"
+                     },
+                     {
+                         "id":  "prod_01KW1TMCMP9FC3R239YP9989SQ",
+                         "title":  "Customized Metal Name Badges",
+                         "subtitle":  null,
+                         "ribbon_text":  null,
+                         "site_product_selection":  null,
+                         "description":  "Premium stainless steel name badges with magnetic backing, perfect for corporate events, conferences, and professional identification.",
+                         "thumbnail":  "https://images.hostinger.com/12f31bae-8c09-48ce-aa25-17400515a066.png",
+                         "slug":  "customized-metal-name-badges",
+                         "url_handle":  "customized-metal-name-badges",
+                         "product_collections":  [
+
+                                                 ],
+                         "order":  1,
+                         "variants":  [
+                                          {
+                                              "id":  "variant_01KW1TMCPKCKWX5G0SBCSAD9RM",
+                                              "title":  "Default",
+                                              "image_url":  null,
+                                              "sku":  null,
+                                              "manage_inventory":  false,
+                                              "is_available":  true,
+                                              "prices":  "",
+                                              "options":  "",
+                                              "donation":  null
+                                          }
+                                      ],
+                         "options":  [
+
+                                     ],
+                         "images":  [
+                                        {
+                                            "url":  "https://images.hostinger.com/12f31bae-8c09-48ce-aa25-17400515a066.png",
+                                            "order":  0,
+                                            "type":  "image"
+                                        }
+                                    ],
+                         "additional_info":  [
+
+                                             ],
+                         "type":  {
+                                      "value":  "physical"
+                                  },
+                         "purchasable":  true,
+                         "is_available":  true,
+                         "seo_settings":  {
+                                              "slug":  "customized-metal-name-badges",
+                                              "title":  "Customized Metal Name Badges",
+                                              "description":  "Premium stainless steel name badges with magnetic backing, perfect for corporate events, conferences, and professional identification.",
+                                              "keywords":  [
+
+                                                           ]
+                                          },
+                         "page_settings":  {
+                                               "seoSlug":  "customized-metal-name-badges",
+                                               "seoTitle":  "Customized Metal Name Badges",
+                                               "seoKeywords":  [
+
+                                                               ],
+                                               "seoDescription":  "Premium stainless steel name badges with magnetic backing, perfect for corporate events, conferences, and professional identification."
+                                           },
+                         "custom_fields":  [
+
+                                           ],
+                         "updated_at":  "2026-06-26T11:21:53.524Z"
+                     }
+                 ],
+    "count":  16,
+    "offset":  0,
+    "limit":  2000
+}
