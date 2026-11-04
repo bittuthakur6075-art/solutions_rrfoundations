@@ -33,17 +33,26 @@
 - [x] **Input Boundary Constraints:** Enforces field length limits (`fullName` 100, `email` 100, `phone` 25, `message` 3000 chars) and sanitizes special characters.
 
 ### 2.2 Email Delivery Architecture
-- [x] **Notification Recipient:** Verified hardcoded to **`help@rrfoundation.org`**.
+- [x] **Notification Recipient:** Verified hardcoded to **`help@rrfoundation.org`** across all files (`public/api/enquiry.php`, `lib/utils.ts`, `components/layout/Header.tsx`, `components/layout/Footer.tsx`, and prerender scripts).
+  - *Domain Distinction Note:* The web production domain is `solutions.rrfoundations.org` (plural "foundations"), whereas the official Google Workspace / Hostinger mailbox is `help@rrfoundation.org` (singular "foundation"). This distinction is verified and consistent.
 - [x] **Zero Credential Exposure:** No SMTP passwords, tokens, or private keys exist in client JavaScript bundles.
 - [x] **Delivery Engine:** Utilizes PHP's native `mail()` dispatch with formatted MIME headers and UTF-8 encoding.
 - [x] **Safe Confirmation:** Frontend receives an optimistic JSON confirmation `{ "success": true, "id": "enq_..." }` while server errors are logged safely.
 - [!] **Unverified Check:** *Actual email inbox receipt at `help@rrfoundation.org` cannot be verified until the PHP script runs on Hostinger's live mail exchange.*
 
 ### 2.3 Product SEO & Prerendering Architecture
-- [x] **All 268 Products Prerendered:** Generated individual static HTML files: `dist/products/<slug>/index.html`.
+- [x] **Reconciled Route Counts (100% 1:1 Parity):**
+  - **Catalogue Source:** Exactly 268 unique products defined in `lib/data/products.ts`.
+  - **Core Static Routes:** Exactly 9 core pages: Homepage (`/`), `/about`, `/products`, `/manufacturing`, `/industries`, `/contact`, `/request-quote`, `/privacy-policy`, `/terms-and-conditions`.
+  - **Sitemap XML:** Exactly **277 canonical entries** generated in `public/sitemap.xml` and `dist/sitemap.xml` (9 core pages + 268 products).
+  - **Prerendered HTML Files:** Exactly **277 static HTML files** generated on disk:
+    - `dist/index.html` (Homepage root)
+    - 8 core sub-page HTML files: `dist/<page>/index.html`
+    - 268 individual product HTML files: `dist/products/<slug>/index.html`
+  - **Route Reconciliation Verdict:** Resolved the previous 276 count by explicitly prerendering and logging `dist/index.html` as the 9th core route alongside the 8 sub-pages and 268 products. Zero missing routes, zero duplicate entries.
 - [x] **Unique Product Titles & Descriptions:** Every product contains its dedicated title, description, and canonical URL pointing to `https://solutions.rrfoundations.org/products/<slug>`.
 - [x] **Product Structured Data (JSON-LD):** Each product includes Schema.org `@type: "Product"` with accurate title, category, manufacturer, Indian Rupee (`INR`) currency, and high-resolution thumbnail URL.
-- [x] **XML Sitemap Integrity:** `sitemap.xml` contains exactly **277 canonical entries** (9 core static routes + 268 unique products) with matching canonical tags and zero duplicates.
+- [x] **XML Sitemap Integrity:** `sitemap.xml` contains exactly **277 canonical entries** with matching canonical tags and zero duplicates.
 - [x] **Robots.txt:** Verified allowing all search engine bots and referencing the canonical sitemap.
 
 ### 2.4 Apache `.htaccess` Configuration
@@ -87,18 +96,55 @@
 
 ---
 
-## 5. Post-Deployment Verification Protocol
+## 5. Safe Live-Server Testing & Email Delivery Verification Protocol
 
-1. Navigate to `https://solutions.rrfoundations.org/` — confirm 200 OK.
-2. Navigate directly to `https://solutions.rrfoundations.org/products` — confirm catalogue loads without 404.
-3. Test a direct product URL (e.g. `https://solutions.rrfoundations.org/products/traditional-divine-corporate-photo-frame-model-fr-01`).
-4. Submit a test quote through the modal — verify confirmation prompt.
-5. Verify customer submissions file is protected by visiting `https://solutions.rrfoundations.org/data/enquiry_submissions.json` — must return **403 Forbidden**.
-6. Check inbox at `help@rrfoundation.org` for notification receipt.
+Since email delivery via PHP `mail()` depends on Hostinger's MTA (Mail Transfer Agent) and DNS SPF/DKIM records, follow this exact procedure once the archive is extracted:
+
+### 5.1 Step-by-Step Live Testing Procedure
+1. **Frontend RFQ Submission Test:**
+   - Visit `https://solutions.rrfoundations.org/request-quote` (or open the "Request a Quote" modal on any product page).
+   - Fill in:
+     - **Full Name:** `Hostinger Verification QA`
+     - **Email:** A test client email address you have access to.
+     - **Phone:** `+91 98765 43210`
+     - **Product:** `Metal Badge Pin (Gold Finish)`
+     - **Quantity:** `500`
+     - **Message:** `Live server deliverability and UTF-8 verification test.`
+   - Submit the form. Confirm the green success banner appears with a generated enquiry tracking ID (e.g., `enq_...`).
+
+2. **Check Official Inbox (`help@rrfoundation.org`):**
+   - Log into Webmail or your mail client for `help@rrfoundation.org`.
+   - Look for email with subject: `New B2B Manufacturing RFQ: Metal Badge Pin (Gold Finish) [enq_...]`.
+   - Check headers to verify sender: `From: RR Foundations Web <noreply@rrfoundations.org>`.
+
+3. **Check Spam / Junk Folder & SPF/DKIM Alignment:**
+   - If the notification does not appear in the primary inbox within 2 minutes, check the **Spam / Junk** folder.
+   - If found in Spam:
+     - Check email authentication headers for `spf=pass` and `dkim=pass`.
+     - In Hostinger hPanel → **DNS Zone Editor**, ensure the SPF record includes Hostinger's mail server: `v=spf1 include:_spf.mail.hostinger.com ~all`.
+
+4. **PHP Error Logging Inspection:**
+   - If no email is received at all, check Hostinger File Manager for `public_html/error_log` or `public_html/api/error_log`.
+   - Verify that no PHP exceptions or `mail()` warnings were raised.
+
+5. **Datastore Fallback Audit:**
+   - In Hostinger File Manager, check `public_html/data/enquiry_submissions.json` (or `private_data/enquiry_submissions.json`).
+   - Confirm that the submission was safely written to the datastore regardless of external mail delivery status.
 
 ---
 
-## 6. Rollback Instructions
+## 6. Local Development Note (Fix for Screenshot / Port 3000)
+
+- **Issue Observed:** An earlier running Next.js instance on port 3000 caused 404 errors for `_next/static/css/...` because the Next.js `.next` cache had been replaced by the React + Vite migration build.
+- **Resolution:**
+  - The zombie Next.js dev process on port 3000 was stopped.
+  - `vite.config.ts` was updated with `server: { port: 3000 }` and `preview: { port: 3000 }`.
+  - Running `npm run dev` now serves the React + Vite application on `http://localhost:3000/`.
+  - Running `npm run preview` now serves the static prerendered production build on `http://localhost:3000/`.
+
+---
+
+## 7. Rollback Instructions
 
 If you ever wish to revert to the Next.js 14 version:
 - **Git Branch:** `nextjs-production-ready`

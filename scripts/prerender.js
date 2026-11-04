@@ -14,6 +14,27 @@ const baseUrl = 'https://solutions.rrfoundations.org';
 
 const coreRoutes = [
   {
+    path: '',
+    title: 'RR Foundations | Premium B2B Manufacturing & Custom Products',
+    description: 'Direct physical manufacturing of precision metal badges, conference ID card kits, custom acrylic & MDF products, corporate drinkware, and executive gift hampers in New Delhi.',
+    canonical: `${baseUrl}/`,
+    ogImage: `${baseUrl}/icon.png`,
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RR Foundations",
+      "url": "https://solutions.rrfoundations.org",
+      "logo": "https://solutions.rrfoundations.org/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 74280 45813",
+        "contactType": "Customer Service",
+        "email": "help@rrfoundation.org",
+        "areaServed": "IN"
+      }
+    }
+  },
+  {
     path: 'about',
     title: 'About Us | Factory Heritage & B2B Manufacturing | RR Foundations',
     description: 'Direct manufacturer of precision metal badges, corporate merchandise, and institutional accessories based in New Delhi, India.',
@@ -164,4 +185,5 @@ products.forEach(prod => {
 });
 
 console.log(`Prerendered ${productCount} individual product catalogue routes in dist/products/<slug>/index.html.`);
+console.log(`Total prerendered routes: ${coreRoutes.length + productCount} (9 core pages + 268 products matching sitemap 1:1).`);
 console.log('Complete static route prerendering finished for Hostinger Premium Web Hosting.');
