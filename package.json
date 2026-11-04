@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.js",
+    "build": "node scripts/generate_sitemap_xml.js && vite build && node scripts/prerender.js",
     "preview": "vite preview",
     "lint": "next lint",
     "next:dev": "next dev",

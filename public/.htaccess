@@ -6,28 +6,45 @@
   RewriteEngine On
   RewriteBase /
 
-  # 1. Enforce HTTPS (if on Hostinger without automatic Cloudflare SSL)
-  RewriteCond %{HTTPS} off
-  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  # 1. Enforce HTTPS without redirect loops (Hostinger / Cloudflare compatible)
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteCond %{HTTP:X-Forwarded-SSL} !=on
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # 2. Native B2B Enquiry API Route Routing
+  # 2. Block direct web access to sensitive directories
+  RewriteRule ^(data|scripts|src|docs|node_modules)(\/.*)?$ - [F,L]
+
+  # 3. Route /api/enquiry to native PHP handler
   RewriteRule ^api/enquiry/?$ /api/enquiry.php [L,QSA]
 
-  # 3. Static File Passthrough
+  # 4. Serve existing static files & prerendered directories directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # 4. React Single Page Application (SPA) Fallback
+  # 5. React SPA Fallback for client-side routing
   RewriteRule ^ index.html [L]
 </IfModule>
 
-# Security: Block sensitive file access
-<FilesMatch "(\.(env|git|json|lock|config)|composer|package)">
-  Order allow,deny
-  Deny from all
+# Security: Deny access to sensitive files, logs, backups, and configurations
+<FilesMatch "(\.(env|git|json|lock|config|bak|sql|log|md|sh|ps1)|composer|package)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
 </FilesMatch>
+
+# Security Response Headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
 
 # Enable Browser Caching
 <IfModule mod_expires.c>
