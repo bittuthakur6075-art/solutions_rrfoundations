@@ -1,6 +1,5 @@
 import { MetadataRoute } from "next";
 import { PRODUCTS } from "@/lib/data/products";
-import { CATEGORIES } from "@/lib/data/categories";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://solutions.rrfoundations.org";

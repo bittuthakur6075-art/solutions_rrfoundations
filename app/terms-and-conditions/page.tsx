@@ -1,5 +1,4 @@
 import React from "react";
-import { COMPANY_INFO } from "@/lib/utils";
 
 export const metadata = {
   title: "Terms and Conditions | RR Foundations",

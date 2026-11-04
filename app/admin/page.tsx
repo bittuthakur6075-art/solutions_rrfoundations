@@ -1,37 +1,52 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
   Package,
   Inbox,
   BarChart3,
-  Settings,
-  Plus,
   Search,
   ExternalLink,
-  CheckCircle,
-  Clock,
-  Shield,
-  Layers,
-  ArrowUpRight,
   TrendingUp,
 } from "lucide-react";
 import { PRODUCTS } from "@/lib/data/products";
 import { CATEGORIES } from "@/lib/data/categories";
+import type { InquirySubmission } from "@/types";
 
 export default function AdminDashboardPage() {
   const [activeTab, setActiveTab] = useState<"products" | "inquiries" | "overview">("overview");
-  const [inquiries, setInquiries] = useState<any[]>([]);
+  const [inquiries, setInquiries] = useState<InquirySubmission[]>([]);
   const [searchFilter, setSearchFilter] = useState("");
 
   useEffect(() => {
-    // Load local enquiries if available
-    fetch("/docs/enquiry_submissions.json")
-      .then((res) => res.json())
-      .then((data) => {
-        if (Array.isArray(data)) setInquiries(data);
+    // Load local enquiries from API endpoint
+    fetch("/api/enquiry")
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch enquiries");
+        return res.json();
+      })
+      .then((data: unknown) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setInquiries(data as InquirySubmission[]);
+        } else {
+          // If no submissions recorded yet, provide verified default sample for staff preview
+          setInquiries([
+            {
+              id: "enq_1793702130962_6z3qp",
+              timestamp: "2026-11-03T10:35:30.962Z",
+              fullName: "Test Procurement Manager",
+              companyName: "Apex Enterprises",
+              email: "test@apex.example",
+              phone: "+919876543210",
+              productName: "Customized Metal Name Badges",
+              quantity: "500",
+              message: "Requesting prototype and sample quote for 500 units.",
+              status: "New",
+            },
+          ]);
+        }
       })
       .catch(() => {
         // Fallback default sample for staff review
@@ -45,11 +60,18 @@ export default function AdminDashboardPage() {
             phone: "+919876543210",
             productName: "Customized Metal Name Badges",
             quantity: "500",
+            message: "Requesting prototype and sample quote for 500 units.",
             status: "New",
           },
         ]);
       });
   }, []);
+
+  const filteredProducts = useMemo(() => {
+    if (!searchFilter.trim()) return PRODUCTS;
+    const lower = searchFilter.toLowerCase();
+    return PRODUCTS.filter((p) => p.title.toLowerCase().includes(lower));
+  }, [searchFilter]);
 
   return (
     <div className="min-h-screen bg-[#F7F4EE] flex flex-col md:flex-row text-[#182A25] font-sans">
@@ -58,9 +80,15 @@ export default function AdminDashboardPage() {
         <div>
           {/* Admin Header */}
           <div className="p-6 border-b border-white/10 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-gold text-forest-950 font-heading font-black flex items-center justify-center text-sm">
-                RR
+            <Link href="/" className="flex items-center gap-3">
+              <div className="relative w-9 h-9 rounded-xl overflow-hidden flex items-center justify-center">
+                <Image
+                  src="/icon.png"
+                  alt="RR Foundations"
+                  width={36}
+                  height={36}
+                  className="object-contain"
+                />
               </div>
               <div>
                 <span className="font-heading font-bold text-sm tracking-wide block">
@@ -315,9 +343,7 @@ export default function AdminDashboardPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#E8E2D7]">
-                  {PRODUCTS.filter((p) =>
-                    p.title.toLowerCase().includes(searchFilter.toLowerCase())
-                  ).map((p) => (
+                  {filteredProducts.map((p) => (
                     <tr key={p.id} className="hover:bg-[#F7F4EE]/50 transition">
                       <td className="py-3.5 px-4 font-semibold text-[#182A25] flex items-center gap-3">
                         <div className="relative w-9 h-9 rounded-lg bg-[#F7F4EE] border border-[#E8E2D7] flex-shrink-0 p-1">

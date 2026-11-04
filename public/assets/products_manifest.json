@@ -18,33 +18,6 @@
     "size": 2485056
   },
   {
-    "originalName": "22.png",
-    "cleanName": "badge-002.png",
-    "publicPath": "/assets/products/badge-002.png",
-    "catSlug": "badges-lapel-pins",
-    "catName": "Badges & Lapel Pins",
-    "rawCategory": "Badge Pin",
-    "size": 2485056
-  },
-  {
-    "originalName": "3.jpeg",
-    "cleanName": "frame-002.jpeg",
-    "publicPath": "/assets/products/frame-002.jpeg",
-    "catSlug": "photo-frames-awards",
-    "catName": "Photo Frames & Awards",
-    "rawCategory": "balaji Photo Frame",
-    "size": 170736
-  },
-  {
-    "originalName": "4.jpeg",
-    "cleanName": "frame-003.jpeg",
-    "publicPath": "/assets/products/frame-003.jpeg",
-    "catSlug": "photo-frames-awards",
-    "catName": "Photo Frames & Awards",
-    "rawCategory": "balaji Photo Frame",
-    "size": 170736
-  },
-  {
     "originalName": "5.png",
     "cleanName": "frame-004.png",
     "publicPath": "/assets/products/frame-004.png",
@@ -1359,15 +1332,6 @@
     "size": 76819
   },
   {
-    "originalName": "WhatsApp Image 2026-01-07 at 22.17.34 (2).jpeg",
-    "cleanName": "frame-009.jpeg",
-    "publicPath": "/assets/products/frame-009.jpeg",
-    "catSlug": "photo-frames-awards",
-    "catName": "Photo Frames & Awards",
-    "rawCategory": "balaji Photo Frame",
-    "size": 76819
-  },
-  {
     "originalName": "WhatsApp Image 2026-01-07 at 22.17.34.jpeg",
     "cleanName": "frame-010.jpeg",
     "publicPath": "/assets/products/frame-010.jpeg",
@@ -2284,15 +2248,6 @@
     "catName": "Keychains & Acrylic Crafts",
     "rawCategory": "Acrylic",
     "size": 124022
-  },
-  {
-    "originalName": "WhatsApp Image 2026-06-03 at 12.27.55 PM.jpeg",
-    "cleanName": "craft-017.jpeg",
-    "publicPath": "/assets/products/craft-017.jpeg",
-    "catSlug": "keychains-acrylic-crafts",
-    "catName": "Keychains & Acrylic Crafts",
-    "rawCategory": "Acrylic",
-    "size": 100912
   },
   {
     "originalName": "WhatsApp Image 2026-06-04 at 11.11.49 AM.jpeg",

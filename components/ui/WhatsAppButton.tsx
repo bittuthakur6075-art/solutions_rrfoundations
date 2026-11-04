@@ -2,7 +2,7 @@
 
 import React from "react";
 import { MessageCircle } from "lucide-react";
-import { getWhatsAppUrl, COMPANY_INFO } from "@/lib/utils";
+import { getWhatsAppUrl } from "@/lib/utils";
 
 export function WhatsAppButton() {
   return (

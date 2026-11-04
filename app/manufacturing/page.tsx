@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Check, ShieldCheck, ArrowRight } from "lucide-react";
+import { Check, ShieldCheck } from "lucide-react";
 import { MANUFACTURING_PROCESSES } from "@/lib/data/manufacturing";
 import { Button } from "@/components/ui/Button";
 

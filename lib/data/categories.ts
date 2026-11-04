@@ -7,7 +7,7 @@ export const CATEGORIES: Category[] = [
     "slug": "badges-lapel-pins",
     "description": "In-house manufactured stainless steel name badges, magnetic fastener badges, die-struck brass lapel pins, acrylic badges, and political campaign insignias.",
     "image": "/assets/products/badge-001.png",
-    "featuredProductCount": 46,
+    "featuredProductCount": 45,
     "highlights": [
       "Pure copper & steel cores",
       "Magnetic & safety clasp backings",
@@ -63,7 +63,7 @@ export const CATEGORIES: Category[] = [
     "slug": "photo-frames-awards",
     "description": "Intricately detailed Balaji gold foil divine frames, crystal clear acrylic desktop photo frames, and institutional recognition mementos.",
     "image": "/assets/products/frame-001.jpeg",
-    "featuredProductCount": 20,
+    "featuredProductCount": 17,
     "highlights": [
       "Gold foil embossed religious & civic artwork",
       "Durable engineered frame borders",
@@ -105,7 +105,7 @@ export const CATEGORIES: Category[] = [
     "slug": "keychains-acrylic-crafts",
     "description": "Custom die-struck metal keychains, laser-cut acrylic key tags, molded silicone accessories, and desktop paperweights.",
     "image": "/assets/products/craft-001.png",
-    "featuredProductCount": 17,
+    "featuredProductCount": 16,
     "highlights": [
       "Heavyweight zinc alloy & brass stamping",
       "Crystal clear edge-polished acrylic",

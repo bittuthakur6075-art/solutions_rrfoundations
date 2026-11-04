@@ -15,6 +15,8 @@ export interface Product {
   tags: string[];
   seoTitle?: string;
   seoDescription?: string;
+  aliases?: string[];
+  archivedDuplicateIds?: string[];
 }
 
 export interface Category {
@@ -50,4 +52,19 @@ export interface IndustrySolution {
   actionText?: string;
   actionHref?: string;
   theme?: "dark" | "light";
+}
+
+export interface InquirySubmission {
+  id: string;
+  timestamp: string;
+  fullName: string;
+  companyName?: string;
+  email: string;
+  phone: string;
+  productName?: string;
+  category?: string;
+  quantity: string;
+  customizationDetails?: string;
+  message: string;
+  status?: string;
 }

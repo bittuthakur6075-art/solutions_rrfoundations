@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Search, MessageSquare, ArrowRight, ShieldCheck, SlidersHorizontal } from "lucide-react";
+import { Search, MessageSquare } from "lucide-react";
 import { PRODUCTS } from "@/lib/data/products";
 import { CATEGORIES } from "@/lib/data/categories";
 import { Button } from "@/components/ui/Button";
@@ -17,14 +17,20 @@ export default function ProductsPage() {
     category: string;
   } | null>(null);
 
-  const filteredProducts = PRODUCTS.filter((p) => {
-    const matchesCat = selectedCategory === "all" || p.category === selectedCategory;
-    const matchesSearch =
-      p.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      p.shortDescription.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      p.tags.some((t) => t.toLowerCase().includes(searchTerm.toLowerCase()));
-    return matchesCat && matchesSearch;
-  });
+  const filteredProducts = useMemo(() => {
+    const term = searchTerm.trim().toLowerCase();
+    return PRODUCTS.filter((p) => {
+      const matchesCat = selectedCategory === "all" || p.category === selectedCategory;
+      if (!matchesCat) return false;
+      if (!term) return true;
+      return (
+        p.title.toLowerCase().includes(term) ||
+        p.shortDescription.toLowerCase().includes(term) ||
+        p.tags.some((t) => t.toLowerCase().includes(term)) ||
+        Boolean(p.aliases?.some((a) => a.toLowerCase().includes(term)))
+      );
+    });
+  }, [searchTerm, selectedCategory]);
 
   return (
     <div className="min-h-screen bg-[#F7F4EE] text-[#182A25]">
@@ -127,8 +133,11 @@ export default function ProductsPage() {
               <div
                 key={prod.id}
                 id={prod.slug}
-                className="group bg-white rounded-2xl overflow-hidden border border-[#E8E2D7] hover:border-[#D9B878] transition-all duration-300 flex flex-col justify-between hover:shadow-luxury"
+                className="group bg-white rounded-2xl overflow-hidden border border-[#E8E2D7] hover:border-[#D9B878] transition-all duration-300 flex flex-col justify-between hover:shadow-luxury relative"
               >
+                {prod.aliases?.map((alias) => (
+                  <span key={alias} id={alias} className="sr-only absolute" />
+                ))}
                 <div>
                   <div className="relative aspect-[4/3] bg-[#F7F4EE]/50 p-6 border-b border-[#E8E2D7] overflow-hidden">
                     <Image

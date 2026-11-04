@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { X, Send, CheckCircle2, ShieldCheck, Loader2 } from "lucide-react";
 import { Button } from "./Button";
 import { getWhatsAppUrl } from "@/lib/utils";
@@ -83,10 +84,18 @@ export function EnquiryModal({ isOpen, onClose, productName, categoryName }: Enq
         {/* Header */}
         <div className="bg-[#102A25] text-white px-6 py-5 flex items-center justify-between border-b border-white/10">
           <div>
-            <span className="text-gold text-[11px] font-heading font-bold uppercase tracking-widest block">
+            <div className="relative h-6 w-32 mb-1.5">
+              <Image
+                src="/assets/rr_logo_white.png"
+                alt="RR FOUNDATIONS®"
+                fill
+                className="object-contain object-left"
+              />
+            </div>
+            <span className="text-gold text-[10px] font-heading font-bold uppercase tracking-widest block">
               B2B DIRECT MANUFACTURING
             </span>
-            <h3 className="font-serif text-2xl text-white mt-0.5">
+            <h3 className="font-serif text-xl sm:text-2xl text-white mt-0.5">
               {productName ? `Quote: ${productName}` : "Request a Bulk Quote"}
             </h3>
           </div>

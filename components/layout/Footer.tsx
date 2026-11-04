@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin, Clock, ArrowRight, MessageCircle } from "lucide-react";
 import { COMPANY_INFO, getWhatsAppUrl } from "@/lib/utils";
 import { CATEGORIES } from "@/lib/data/categories";
@@ -48,17 +49,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg border border-white/15 group-hover:border-gold transition">
-                <span className="font-heading font-black text-2xl text-white tracking-tighter">
-                  RR
-                </span>
-              </div>
-              <div className="flex items-baseline gap-1">
-                <span className="font-heading font-extrabold text-xl text-white tracking-wider">
-                  RR FOUNDATIONS
-                </span>
-                <span className="text-xs text-gold font-bold">®</span>
+            <Link href="/" className="inline-block group">
+              <div className="relative h-9 sm:h-10 w-48 sm:w-56">
+                <Image
+                  src="/assets/rr_logo_white.png"
+                  alt="RR FOUNDATIONS®"
+                  fill
+                  className="object-contain object-left group-hover:opacity-90 transition"
+                />
               </div>
             </Link>
 

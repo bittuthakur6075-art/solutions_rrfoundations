@@ -13,7 +13,6 @@ import {
   Mail,
   Search,
   Factory,
-  Sparkles,
   Box,
   Truck,
   Layers,
@@ -114,9 +113,9 @@ export function Header() {
       >
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="flex items-center justify-between">
-            {/* Logo from Reference */}
+            {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative h-8 sm:h-9 w-44 sm:w-52">
+              <div className="relative h-8 sm:h-9 md:h-10 w-44 sm:w-48 md:w-56">
                 <Image
                   src="/assets/rr_logo_white.png"
                   alt="RR FOUNDATIONS®"
@@ -321,6 +320,16 @@ export function Header() {
         {mobileMenuOpen && (
           <div className="lg:hidden fixed inset-x-0 top-[100px] bottom-0 bg-[#102A25] z-40 border-t border-white/15 flex flex-col justify-between overflow-y-auto animate-in slide-in-from-top-4 duration-300 p-6">
             <div className="space-y-2">
+              <div className="mb-4 pb-3 border-b border-white/10">
+                <div className="relative h-8 w-44">
+                  <Image
+                    src="/assets/rr_logo_white.png"
+                    alt="RR FOUNDATIONS®"
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
+              </div>
               <span className="text-xs font-heading font-bold text-[#D9B878] uppercase tracking-widest block mb-3">
                 Navigation
               </span>

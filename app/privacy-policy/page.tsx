@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { COMPANY_INFO } from "@/lib/utils";
 
 export const metadata = {

@@ -22,8 +22,3 @@ export function getWhatsAppUrl(message?: string): string {
   const text = encodeURIComponent(message || defaultMsg);
   return `https://wa.me/${COMPANY_INFO.phoneRaw}?text=${text}`;
 }
-
-export function formatQuantity(num?: number): string {
-  if (!num) return "Bulk custom";
-  return `${num.toLocaleString()}+ units`;
-}
