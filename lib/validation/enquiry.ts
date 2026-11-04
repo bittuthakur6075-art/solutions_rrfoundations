@@ -10,6 +10,7 @@ export const EnquirySchema = z.object({
   quantity: z.string().min(1, "Please specify an estimated quantity"),
   customizationDetails: z.string().optional(),
   message: z.string().min(5, "Please share some details about your requirement"),
+  website_hp: z.string().optional(),
 });
 
 export type EnquiryFormData = z.infer<typeof EnquirySchema>;

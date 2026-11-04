@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Clock, ArrowRight, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/Icon";
 import { COMPANY_INFO, getWhatsAppUrl } from "@/lib/utils";
 import { CATEGORIES } from "@/lib/data/categories";
 
@@ -37,7 +38,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="px-6 py-3 bg-white/5 hover:bg-white/10 text-white border border-white/15 rounded-xl font-heading font-semibold text-sm transition flex items-center gap-2"
             >
-              <MessageCircle className="w-4 h-4 text-[#25D366]" />
+              <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
               <span>WhatsApp Us</span>
             </a>
           </div>
@@ -64,9 +65,15 @@ export function Footer() {
               Professional manufacturing and custom product solutions. Precision metal badges, conference credential kits, UV-printed MDF clipboards, and corporate merchandise engineered with industrial consistency.
             </p>
 
-            <div className="pt-2 text-xs text-white/60 space-y-1">
-              <p>• Verified Production Facilities in New Delhi</p>
-              <p>• Nationwide Logistics &amp; Custom Institutional Packing</p>
+            <div className="pt-2 text-xs text-white/60 space-y-1.5">
+              <p className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold/80 flex-shrink-0" />
+                <span>Verified Production Facilities in New Delhi</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold/80 flex-shrink-0" />
+                <span>Nationwide Logistics &amp; Custom Institutional Packing</span>
+              </p>
             </div>
           </div>
 
@@ -83,16 +90,17 @@ export function Footer() {
                     className="text-white/70 hover:text-gold transition flex items-center justify-between group"
                   >
                     <span>{cat.name}</span>
-                    <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-gold" />
+                    <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-gold" strokeWidth={1.75} />
                   </Link>
                 </li>
               ))}
               <li>
                 <Link
                   href="/products"
-                  className="text-gold font-medium hover:underline text-xs inline-block pt-1"
+                  className="text-gold font-medium hover:underline text-xs inline-flex items-center gap-1.5 pt-1 group"
                 >
-                  View All Verified Products →
+                  <span>View All Verified Products</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" strokeWidth={1.75} />
                 </Link>
               </li>
             </ul>
@@ -139,13 +147,13 @@ export function Footer() {
             </h4>
             <ul className="space-y-3.5 text-sm">
               <li className="flex items-start gap-2.5 text-white/80">
-                <MapPin className="w-4 h-4 text-gold flex-shrink-0 mt-1" />
+                <MapPin className="w-4 h-4 text-gold flex-shrink-0 mt-1" strokeWidth={1.75} />
                 <span className="text-xs leading-relaxed font-light">
                   {COMPANY_INFO.address}
                 </span>
               </li>
               <li className="flex items-center gap-2.5 text-white/80">
-                <Phone className="w-4 h-4 text-gold flex-shrink-0" />
+                <Phone className="w-4 h-4 text-gold flex-shrink-0" strokeWidth={1.75} />
                 <a
                   href={`tel:${COMPANY_INFO.phone}`}
                   className="text-xs hover:text-gold transition"
@@ -154,7 +162,7 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-white/80">
-                <Mail className="w-4 h-4 text-gold flex-shrink-0" />
+                <Mail className="w-4 h-4 text-gold flex-shrink-0" strokeWidth={1.75} />
                 <a
                   href={`mailto:${COMPANY_INFO.email}`}
                   className="text-xs hover:text-gold transition"
@@ -163,7 +171,7 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-white/80">
-                <Clock className="w-4 h-4 text-gold flex-shrink-0" />
+                <Clock className="w-4 h-4 text-gold flex-shrink-0" strokeWidth={1.75} />
                 <span className="text-xs font-light">{COMPANY_INFO.hours}</span>
               </li>
             </ul>

@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { MessageCircle, FileText } from "lucide-react";
+import { ClipboardList } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/Icon";
 import { Button } from "@/components/ui/Button";
 import { getWhatsAppUrl } from "@/lib/utils";
 
@@ -88,7 +89,7 @@ export function CustomManufacturingCta({ onOpenQuote }: CustomManufacturingCtaPr
                   onClick={onOpenQuote}
                   className="w-full font-bold shadow-gold"
                 >
-                  <FileText className="w-4 h-4 mr-1.5" />
+                  <ClipboardList className="w-4 h-4 mr-1.5" strokeWidth={1.75} />
                   <span>Request a Custom Quote</span>
                 </Button>
 
@@ -99,7 +100,7 @@ export function CustomManufacturingCta({ onOpenQuote }: CustomManufacturingCtaPr
                   external
                   className="w-full border-white/20 hover:border-gold"
                 >
-                  <MessageCircle className="w-4 h-4 mr-1.5 text-[#25D366]" />
+                  <WhatsAppIcon className="w-4 h-4 mr-1.5 text-[#25D366]" />
                   <span>Direct WhatsApp Inquiries</span>
                 </Button>
               </div>

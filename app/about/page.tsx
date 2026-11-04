@@ -6,16 +6,16 @@ import Link from "next/link";
 import {
   ArrowRight,
   Factory,
-  PenTool,
+  Palette,
   Layers,
-  PackageCheck,
-  MapPin,
+  Boxes,
+  Building2,
   Truck,
   Search,
-  FileText,
+  FileCheck,
   Settings,
+  PackageCheck,
   Package,
-  LayoutGrid,
 } from "lucide-react";
 import { EnquiryModal } from "@/components/ui/EnquiryModal";
 
@@ -67,7 +67,7 @@ export default function AboutPage() {
       title: "Direct Manufacturing & Product Coordination",
     },
     {
-      icon: PenTool,
+      icon: Palette,
       title: "Custom Branding & Product Personalisation",
     },
     {
@@ -75,11 +75,11 @@ export default function AboutPage() {
       title: "Multiple Product Categories Under One Partner",
     },
     {
-      icon: PackageCheck,
+      icon: Boxes,
       title: "Bulk & Institutional Order Support",
     },
     {
-      icon: MapPin,
+      icon: Building2,
       title: "New Delhi-based Business Operations",
     },
     {
@@ -98,7 +98,7 @@ export default function AboutPage() {
     {
       number: "02",
       name: "Plan",
-      icon: FileText,
+      icon: FileCheck,
       description: "We identify suitable product options, materials and customisation possibilities.",
     },
     {
@@ -110,7 +110,7 @@ export default function AboutPage() {
     {
       number: "04",
       name: "Deliver",
-      icon: Package,
+      icon: PackageCheck,
       description: "Completed orders are coordinated for delivery to the required destination.",
     },
   ];
@@ -265,7 +265,7 @@ export default function AboutPage() {
                   </p>
                   <div className="flex items-center gap-1 text-xs font-heading font-bold text-[#182A25] group-hover:text-[#B89650] transition mt-2">
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#D9B878] group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#D9B878] group-hover:translate-x-1 transition-transform" strokeWidth={1.75} />
                   </div>
                 </div>
               </Link>
@@ -300,7 +300,7 @@ export default function AboutPage() {
               return (
                 <div key={idx} className="flex flex-col items-start group">
                   <div className="w-12 h-12 rounded-xl bg-white border border-[#E8E2D7] shadow-sm flex items-center justify-center mb-3 text-[#B89650] group-hover:border-[#D9B878] transition">
-                    <Icon className="w-6 h-6 stroke-[1.6]" />
+                    <Icon className="w-6 h-6 stroke-[1.75]" />
                   </div>
                   <h4 className="font-heading font-bold text-xs sm:text-sm text-[#182A25] leading-snug">
                     {diff.title}
@@ -401,14 +401,14 @@ export default function AboutPage() {
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#D9B878] hover:bg-[#E8CB8D] text-[#102A25] font-heading font-bold text-sm transition-all duration-200 shadow-gold active:translate-y-0.5"
                 >
                   <span>Discuss Your Requirement</span>
-                  <ArrowRight className="w-4 h-4 text-[#102A25]" />
+                  <ArrowRight className="w-4 h-4 text-[#102A25]" strokeWidth={1.75} />
                 </button>
 
                 <Link
                   href="/products"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-white/20 hover:border-[#D9B878] text-white hover:text-[#D9B878] bg-white/5 hover:bg-white/10 transition-all duration-200 font-heading font-semibold text-sm active:translate-y-0.5"
                 >
-                  <LayoutGrid className="w-4 h-4" />
+                  <Package className="w-4 h-4" strokeWidth={1.75} />
                   <span>Explore Our Products</span>
                 </Link>
               </div>

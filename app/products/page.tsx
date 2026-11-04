@@ -98,7 +98,7 @@ export default function ProductsPage() {
 
           {/* Search Input */}
           <div className="relative min-w-[260px]">
-            <Search className="w-4 h-4 text-[#5C6E66] absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-[#5C6E66] absolute left-3.5 top-1/2 -translate-y-1/2" strokeWidth={1.75} />
             <input
               type="text"
               placeholder="Search by name, metal, tag..."
@@ -165,11 +165,14 @@ export default function ProductsPage() {
                     </p>
 
                     <div className="mt-4 pt-3 border-t border-[#E8E2D7] space-y-1.5 text-xs text-[#5C6E66]">
-                      {Object.entries(prod.specifications).slice(0, 3).map(([k, v]) => (
-                        <div key={k} className="flex justify-between">
-                          <span className="font-medium">{k}:</span>
-                          <span className="text-[#182A25] font-semibold truncate max-w-[170px]">{v}</span>
-                        </div>
+                      {Object.entries(prod.specifications)
+                        .filter(([k]) => !k.toLowerCase().includes("dimension"))
+                        .slice(0, 3)
+                        .map(([k, v]) => (
+                          <div key={k} className="flex justify-between">
+                            <span className="font-medium">{k}:</span>
+                            <span className="text-[#182A25] font-semibold truncate max-w-[170px]">{v}</span>
+                          </div>
                       ))}
                     </div>
                   </div>
@@ -187,7 +190,7 @@ export default function ProductsPage() {
                       })
                     }
                   >
-                    <MessageSquare className="w-3.5 h-3.5 mr-1.5 text-forest-950" />
+                    <MessageSquare className="w-3.5 h-3.5 mr-1.5 text-forest-950" strokeWidth={1.75} />
                     <span>Request Quote for This Item</span>
                   </Button>
                 </div>

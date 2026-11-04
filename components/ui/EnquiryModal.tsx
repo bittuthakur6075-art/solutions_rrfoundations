@@ -104,7 +104,7 @@ export function EnquiryModal({ isOpen, onClose, productName, categoryName }: Enq
             className="text-white/70 hover:text-white p-2 rounded-full hover:bg-white/10 transition"
             aria-label="Close modal"
           >
-            <X className="w-5 h-5 text-gold" />
+            <X className="w-5 h-5 text-gold" strokeWidth={1.75} />
           </button>
         </div>
 
@@ -112,7 +112,7 @@ export function EnquiryModal({ isOpen, onClose, productName, categoryName }: Enq
         <div className="p-6">
           {submitted ? (
             <div className="text-center py-8">
-              <CheckCircle2 className="w-14 h-14 text-brand-success mx-auto mb-4" />
+              <CheckCircle2 className="w-14 h-14 text-brand-success mx-auto mb-4" strokeWidth={1.75} />
               <h4 className="font-serif text-2xl text-[#182A25] mb-2">
                 Enquiry Transmitted Successfully
               </h4>
@@ -230,7 +230,7 @@ export function EnquiryModal({ isOpen, onClose, productName, categoryName }: Enq
 
               <div className="pt-2 flex items-center justify-between">
                 <div className="flex items-center gap-1.5 text-xs text-[#5C6E66]">
-                  <ShieldCheck className="w-4 h-4 text-[#102A25]" />
+                  <ShieldCheck className="w-4 h-4 text-[#102A25]" strokeWidth={1.75} />
                   <span>Direct Factory Quotes</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -249,7 +249,7 @@ export function EnquiryModal({ isOpen, onClose, productName, categoryName }: Enq
                       </>
                     ) : (
                       <>
-                        <Send className="w-4 h-4 mr-1 text-forest-950" />
+                        <Send className="w-4 h-4 mr-1 text-forest-950" strokeWidth={1.75} />
                         <span>Send RFQ</span>
                       </>
                     )}

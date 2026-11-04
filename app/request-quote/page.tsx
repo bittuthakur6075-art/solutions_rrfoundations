@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Send, CheckCircle2, ShieldCheck, Loader2 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/Icon";
 import { Button } from "@/components/ui/Button";
 import { CATEGORIES } from "@/lib/data/categories";
 import { getWhatsAppUrl } from "@/lib/utils";
@@ -88,7 +89,7 @@ export default function RequestQuotePage() {
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[#E8E2D7] shadow-luxury">
           {submitted ? (
             <div className="text-center py-12">
-              <CheckCircle2 className="w-16 h-16 text-brand-success mx-auto mb-4" />
+              <CheckCircle2 className="w-16 h-16 text-brand-success mx-auto mb-4" strokeWidth={1.75} />
               <h3 className="font-serif text-3xl text-[#182A25] mb-2">
                 Quotation Request Transmitted
               </h3>
@@ -101,9 +102,10 @@ export default function RequestQuotePage() {
                   size="md"
                   href={getWhatsAppUrl("Hello RR Foundations, I just submitted a formal RFQ on your website.")}
                   external
-                  className="font-bold"
+                  className="font-bold flex items-center gap-1.5"
                 >
-                  Confirm on WhatsApp
+                  <WhatsAppIcon className="w-4 h-4 text-[#102A25]" />
+                  <span>Confirm on WhatsApp</span>
                 </Button>
                 <Button variant="outline" size="md" onClick={() => setSubmitted(false)} className="border-[#E8E2D7] text-[#182A25]">
                   Submit Another RFQ
@@ -241,7 +243,7 @@ export default function RequestQuotePage() {
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="flex items-center gap-2 text-xs text-[#5C6E66]">
-                  <ShieldCheck className="w-4 h-4 text-[#102A25]" />
+                  <ShieldCheck className="w-4 h-4 text-[#102A25]" strokeWidth={1.75} />
                   <span>Direct Factory Quotation • Zero Obligation</span>
                 </div>
                 <Button type="submit" variant="gold" size="lg" className="font-bold" disabled={submitting}>
@@ -252,7 +254,7 @@ export default function RequestQuotePage() {
                     </>
                   ) : (
                     <>
-                      <Send className="w-4 h-4 mr-2" />
+                      <Send className="w-4 h-4 mr-2" strokeWidth={1.75} />
                       <span>Transmit RFQ to Production Desk</span>
                     </>
                   )}

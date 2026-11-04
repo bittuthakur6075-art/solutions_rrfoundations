@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/Icon";
 import { getWhatsAppUrl } from "@/lib/utils";
 
 export function WhatsAppButton() {
@@ -13,7 +13,7 @@ export function WhatsAppButton() {
       aria-label="Direct WhatsApp Consultation"
       className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-4 py-3 bg-[#25D366] text-white rounded-full shadow-elevated hover:shadow-luxury hover:scale-105 transition-all duration-300 font-heading font-semibold text-sm group"
     >
-      <MessageCircle className="w-5 h-5 fill-current" />
+      <WhatsAppIcon className="w-5 h-5 text-white" />
       <span className="hidden sm:inline">WhatsApp Inquiries</span>
       <span className="inline-block w-2 h-2 rounded-full bg-white animate-pulse" />
     </a>

@@ -62,7 +62,7 @@ export function CapabilitiesSection() {
                   {proc.capabilities.map((cap, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-white/85">
                       <div className="w-4 h-4 rounded-full bg-gold/20 text-gold flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Check className="w-2.5 h-2.5" />
+                        <Check className="w-2.5 h-2.5" strokeWidth={2} />
                       </div>
                       <span>{cap}</span>
                     </div>
@@ -95,7 +95,7 @@ export function CapabilitiesSection() {
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gold text-forest-950 font-heading font-bold text-sm hover:bg-gold-hover transition shadow-gold"
           >
             <span>Explore Complete Machinery &amp; Technical Standards</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4" strokeWidth={1.75} />
           </Link>
         </div>
       </div>

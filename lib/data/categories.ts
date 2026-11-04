@@ -90,7 +90,7 @@ export const CATEGORIES: Category[] = [
     "name": "Lanyards & Identification",
     "slug": "lanyards-credentials",
     "description": "Custom multi-color heat transfer satin lanyards, woven neck cords, transparent acrylic ID card holders, and turnkey event credentials.",
-    "image": "/assets/products/lanyard-id-001.jpeg",
+    "image": "/assets/products/category-lanyard-showcase.jpg",
     "featuredProductCount": 12,
     "highlights": [
       "High-density satin & polyester ribbon",

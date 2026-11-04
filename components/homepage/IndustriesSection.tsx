@@ -29,7 +29,7 @@ export function IndustriesSection() {
             className="text-sm font-heading font-bold text-[#182A25] hover:text-[#B89650] flex items-center gap-1.5 self-start md:self-end group"
           >
             <span>Explore All Sector Specs</span>
-            <ArrowRight className="w-4 h-4 text-[#D9B878] group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4 text-[#D9B878] group-hover:translate-x-1 transition-transform" strokeWidth={1.75} />
           </Link>
         </div>
 
@@ -83,7 +83,7 @@ export function IndustriesSection() {
                   className="text-xs font-heading font-bold text-[#182A25] hover:text-[#B89650] flex items-center justify-between"
                 >
                   <span>Request Sector Proposal</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#D9B878]" />
+                  <ArrowRight className="w-3.5 h-3.5 text-[#D9B878]" strokeWidth={1.75} />
                 </Link>
               </div>
             </div>

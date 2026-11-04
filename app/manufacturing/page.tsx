@@ -69,7 +69,7 @@ export default function ManufacturingPage() {
                   {proc.capabilities.map((c, i) => (
                     <div key={i} className="flex items-start gap-2 text-xs sm:text-sm text-[#182A25]">
                       <div className="w-4 h-4 rounded-full bg-[#102A25] text-gold flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Check className="w-2.5 h-2.5" />
+                        <Check className="w-2.5 h-2.5" strokeWidth={2} />
                       </div>
                       <span>{c}</span>
                     </div>
@@ -92,7 +92,7 @@ export default function ManufacturingPage() {
               </div>
 
               <div className="lg:col-span-4 bg-[#102A25] text-white rounded-2xl p-6 sm:p-8 text-center space-y-4 shadow-card">
-                <ShieldCheck className="w-10 h-10 text-gold mx-auto" />
+                <ShieldCheck className="w-10 h-10 text-gold mx-auto" strokeWidth={1.75} />
                 <h4 className="font-serif text-xl text-white">
                   Custom Batch Sizing
                 </h4>

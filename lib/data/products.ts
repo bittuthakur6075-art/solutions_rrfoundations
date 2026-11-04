@@ -2210,7 +2210,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2245,7 +2244,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2280,7 +2278,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2315,7 +2312,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2350,7 +2346,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2385,7 +2380,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2420,7 +2414,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2455,7 +2448,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2490,7 +2482,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2525,7 +2516,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2560,7 +2550,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2595,7 +2584,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2630,7 +2618,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2665,7 +2652,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2700,7 +2686,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2735,7 +2720,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2770,7 +2754,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2805,7 +2788,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2840,7 +2822,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2875,7 +2856,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -2910,7 +2890,6 @@ export const PRODUCTS: Product[] = [
       "Corner Rubber Grips"
     ],
     "specifications": {
-      "Dimensions": "Standard A4 / Legal Exam Size",
       "Thickness": "3.0mm - 4.5mm Rigid Substrate",
       "Safety": "Smooth Radius Chamfered Corners",
       "Print": "Back-Surface Scratchproof Printing"
@@ -9255,7 +9234,6 @@ export const PRODUCTS: Product[] = [
     "specifications": {
       "Company": "Ortex Industries",
       "Product Type": "Promotional Writing Pad / Clipboard",
-      "Dimensions": "Standard A4 (215 x 310 mm)",
       "Thickness": "3.5mm Rigid Substrate",
       "Clip Mechanism": "Heavy-Duty Chrome Wire Spring Clamp",
       "Print Quality": "1440 DPI Full-Bleed UV Digital Print"
@@ -9293,7 +9271,6 @@ export const PRODUCTS: Product[] = [
     "specifications": {
       "Company": "Ortex Industries",
       "Product Type": "Promotional Writing Pad / Clipboard",
-      "Dimensions": "Standard A4 (215 x 310 mm)",
       "Thickness": "3.5mm Rigid Substrate",
       "Clip Mechanism": "Heavy-Duty Chrome Wire Spring Clamp",
       "Print Quality": "1440 DPI Full-Bleed UV Digital Print"
@@ -9331,7 +9308,6 @@ export const PRODUCTS: Product[] = [
     "specifications": {
       "Company": "Medinetix Healthcare",
       "Product Type": "Medical Writing Pad / Patient Chart Board",
-      "Dimensions": "Standard A4 (215 x 310 mm)",
       "Thickness": "3.5mm Rigid Substrate",
       "Clip Mechanism": "High-Tension Rustproof Steel Clamp",
       "Surface Finish": "Non-Porous Antibacterial Wipe-Clean"
@@ -9369,7 +9345,6 @@ export const PRODUCTS: Product[] = [
     "specifications": {
       "Company": "Puma Footwear Pvt. Ltd.",
       "Product Type": "Dealer Catalogue Writing Pad / Order Pad",
-      "Dimensions": "Standard A4 (215 x 310 mm)",
       "Thickness": "3.5mm Rigid Substrate",
       "Clip Mechanism": "Heavy-Duty Chrome Wire Spring Clamp",
       "Print Quality": "Full-Color Double-Pass UV Flatbed"
@@ -9407,7 +9382,6 @@ export const PRODUCTS: Product[] = [
     "specifications": {
       "Company": "Triconix Wires & Cables",
       "Product Type": "Industrial Promotional Writing Pad / Site Board",
-      "Dimensions": "Standard A4 (215 x 310 mm)",
       "Thickness": "3.5mm Rigid Substrate",
       "Clip Mechanism": "Heavy-Duty Chrome Spring Clamp",
       "Print Quality": "Scratch-Resistant Industrial UV Print"

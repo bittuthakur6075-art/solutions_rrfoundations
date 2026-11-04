@@ -75,7 +75,7 @@ export function CategoryShowcase() {
               {/* Bottom Card Footer */}
               <div className="px-6 py-4 bg-[#F7F4EE]/50 border-t border-[#E8E2D7] flex items-center justify-between text-xs font-heading font-bold text-[#182A25] group-hover:text-[#B89650] transition">
                 <span>View Full Line Specifications</span>
-                <ArrowRight className="w-4 h-4 text-[#D9B878] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-[#D9B878] group-hover:translate-x-1 transition-transform" strokeWidth={1.75} />
               </div>
             </Link>
           ))}
