@@ -103,27 +103,84 @@ $submission = [
     "ip"          => $_SERVER['REMOTE_ADDR'] ?? 'unknown'
 ];
 
-// 7. Secure Data Storage with Concurrency Locking (LOCK_EX)
-// Locate secure data folder: Try outside public_html first, fallback to protected local directory
-$outsidePublicHtml = dirname(__DIR__, 2) . "/private_data";
-$localDataDir      = __DIR__ . "/../../data";
+// 7. Secure Data Storage — Exclusively Outside public_html
+// All customer submissions are stored in an unroutable directory above web root.
+// No fallback to public_html or web-accessible directories is permitted.
 
-$dataDir = is_dir($outsidePublicHtml) && is_writable($outsidePublicHtml) 
-    ? $outsidePublicHtml 
-    : $localDataDir;
+$privateDirCandidates = [];
 
-if (!is_dir($dataDir)) {
-    @mkdir($dataDir, 0750, true);
-    // Protect directory from web access if within public_html
-    if ($dataDir === $localDataDir) {
-        @file_put_contents($dataDir . "/.htaccess", "Require all denied\nDeny from all\n");
-        @file_put_contents($dataDir . "/index.html", "<!DOCTYPE html><html><head><title>403 Forbidden</title></head><body><h1>Directory access is forbidden.</h1></body></html>");
+// Candidate A: Direct parent of DOCUMENT_ROOT (Hostinger standard: /home/u123456789/private_data)
+if (!empty($_SERVER['DOCUMENT_ROOT'])) {
+    $docRoot = realpath($_SERVER['DOCUMENT_ROOT']) ?: $_SERVER['DOCUMENT_ROOT'];
+    $docRootParent = dirname($docRoot);
+    if (!empty($docRootParent) && is_dir($docRootParent)) {
+        $privateDirCandidates[] = rtrim($docRootParent, '/\\') . DIRECTORY_SEPARATOR . 'private_data';
     }
 }
 
-$dataFile = $dataDir . "/enquiry_submissions.json";
+// Candidate B: Two levels above current api script (public_html/api -> /home/u123456789/private_data)
+$apiParent2 = dirname(__DIR__, 2);
+if (is_dir($apiParent2)) {
+    $privateDirCandidates[] = rtrim($apiParent2, '/\\') . DIRECTORY_SEPARATOR . 'private_data';
+}
 
-// Atomic concurrent file writing with exclusive lock
+// Candidate C: Three levels above current api script (for subdomain public_html/subfolder/api setups)
+$apiParent3 = dirname(__DIR__, 3);
+if (is_dir($apiParent3)) {
+    $privateDirCandidates[] = rtrim($apiParent3, '/\\') . DIRECTORY_SEPARATOR . 'private_data';
+}
+
+// Candidate D: Dedicated system secure temp directory fallback strictly outside webroot
+$sysTemp = sys_get_temp_dir();
+if (!empty($sysTemp) && is_dir($sysTemp)) {
+    $privateDirCandidates[] = rtrim($sysTemp, '/\\') . DIRECTORY_SEPARATOR . 'rrfoundations_secure_data';
+}
+
+// Validate candidate is strictly OUTSIDE public_html / web root
+$targetPrivateDir = null;
+foreach ($privateDirCandidates as $candidate) {
+    $normalizedCandidate = str_replace('\\', '/', $candidate);
+    
+    // Reject any candidate inside public_html
+    if (preg_match('#/public_html(/|$)#i', $normalizedCandidate)) {
+        continue;
+    }
+    if (!empty($_SERVER['DOCUMENT_ROOT'])) {
+        $docRoot = str_replace('\\', '/', realpath($_SERVER['DOCUMENT_ROOT']) ?: $_SERVER['DOCUMENT_ROOT']);
+        if (!empty($docRoot) && strpos($normalizedCandidate, $docRoot) === 0) {
+            continue;
+        }
+    }
+
+    // Attempt creation with restricted permissions (owner read/write/execute only)
+    if (!is_dir($candidate)) {
+        @mkdir($candidate, 0750, true);
+    }
+
+    if (is_dir($candidate) && is_writable($candidate)) {
+        $targetPrivateDir = $candidate;
+        break;
+    }
+}
+
+// Fail-safe check: If private storage outside public_html is unavailable, fail safely without leaking data
+if ($targetPrivateDir === null) {
+    // Log technical error with reference ID only — never log customer PII
+    error_log("RR FOUNDATIONS SECURITY ALERT: Private storage directory outside public_html is unavailable or unwritable. Reference ID: " . $submissionId);
+    
+    http_response_code(500);
+    echo json_encode([
+        "success" => false,
+        "message" => "Enquiry processing service is temporarily unavailable. Please email help@rrfoundation.org directly.",
+        "id"      => $submissionId
+    ]);
+    exit;
+}
+
+$dataFile = $targetPrivateDir . DIRECTORY_SEPARATOR . "enquiry_submissions.json";
+$writeSuccess = false;
+
+// Atomic concurrent file writing with exclusive lock (LOCK_EX)
 $fp = @fopen($dataFile, "c+");
 if ($fp) {
     if (flock($fp, LOCK_EX)) {
@@ -142,8 +199,22 @@ if ($fp) {
         fwrite($fp, json_encode($currentData, JSON_PRETTY_PRINT));
         fflush($fp);
         flock($fp, LOCK_UN);
+        $writeSuccess = true;
     }
     fclose($fp);
+}
+
+if (!$writeSuccess) {
+    // Log failure without exposing customer PII
+    error_log("RR FOUNDATIONS SECURITY ALERT: Failed to lock or write to private datastore outside public_html. Reference ID: " . $submissionId);
+    
+    http_response_code(500);
+    echo json_encode([
+        "success" => false,
+        "message" => "Enquiry processing service is temporarily unavailable. Please email help@rrfoundation.org directly.",
+        "id"      => $submissionId
+    ]);
+    exit;
 }
 
 // 8. Factory Notification Email Dispatch

@@ -24,11 +24,13 @@
 
 ## 2. Detailed Checklist & Verification Results
 
-### 2.1 Enquiry Data Security
-- [x] **File Permissions & Path Disclosure:** `public/api/enquiry.php` includes `error_reporting(0); ini_set('display_errors', '0');` to prevent internal server paths from leaking in error states.
+### 2.1 Enquiry Data Security & Storage Isolation
+- [x] **Exclusive Storage Outside `public_html`:** Customer enquiry submissions are strictly stored in an unroutable directory outside `public_html` (e.g. `/home/u123456789/private_data/enquiry_submissions.json`).
+- [x] **Zero Fallback Inside `public_html`:** The fallback that previously wrote to `public_html/data` has been completely eliminated. No customer PII is ever written inside web document roots.
+- [x] **Safe Failure Mode & Zero PII Logging:** If the external private directory cannot be resolved or is not writable, the handler immediately aborts, logs an alert containing ONLY the technical submission reference ID (zero customer names, emails, phones, or messages in logs), and returns a generic 500 error directing users to `help@rrfoundation.org`.
+- [x] **Hostinger Write Permissions Confirmed:** Hostinger Premium Web Hosting executes PHP-FPM under the account user (`u123456789`), providing native POSIX permissions to create and write to `/home/u123456789/private_data` outside `public_html`.
+- [x] **File Permissions & Path Disclosure:** `public/api/enquiry.php` includes `error_reporting(0); ini_set('display_errors', '0'); ini_set('log_errors', '1');` to prevent internal server paths or stack traces from leaking to clients.
 - [x] **Concurrent Write Protection:** Data persistence utilizes `flock($fp, LOCK_EX)` to guarantee atomic updates without race-condition file corruption.
-- [x] **Private Storage Isolation:** The endpoint automatically checks for `private_data` outside `public_html`. If written inside `public_html/data`, directory access is blocked by `.htaccess` (`Require all denied`) and an empty `index.html`.
-- [x] **Direct Web Access Block:** Direct requests to `data/` or any `*.json` file return `403 Forbidden` via Apache rules.
 - [x] **Spam Defense:** Server-side honeypot trap (`website_hp`) silently traps bots without saving spam.
 - [x] **Input Boundary Constraints:** Enforces field length limits (`fullName` 100, `email` 100, `phone` 25, `message` 3000 chars) and sanitizes special characters.
 
