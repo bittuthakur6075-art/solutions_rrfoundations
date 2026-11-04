@@ -4,12 +4,12 @@ import Image from "next/image";
 import {
   ArrowRight,
   Factory,
-  PenTool,
+  Palette,
   Layers,
-  PencilRuler,
-  PackageCheck,
-  MapPin,
-  LayoutGrid,
+  FileCheck,
+  Boxes,
+  Truck,
+  Package,
 } from "lucide-react";
 import { INDUSTRIES } from "@/lib/data/industries";
 
@@ -26,7 +26,7 @@ const DIFFERENCE_FEATURES = [
     description: "Access multiple product categories and customised product options.",
   },
   {
-    icon: PenTool,
+    icon: Palette,
     title: "Custom Branding & Personalisation",
     description: "Bring your brand identity to life with suitable branding options.",
   },
@@ -36,17 +36,17 @@ const DIFFERENCE_FEATURES = [
     description: "Coordinate different product requirements together, with ease.",
   },
   {
-    icon: PencilRuler,
+    icon: FileCheck,
     title: "Design & Artwork Coordination",
     description: "Share your artwork and requirements for a smooth production process.",
   },
   {
-    icon: PackageCheck,
+    icon: Boxes,
     title: "Bulk Order Support",
     description: "Get product recommendations and quotations for bulk requirements.",
   },
   {
-    icon: MapPin,
+    icon: Truck,
     title: "Pan-India Supply",
     description: "Based in New Delhi, we support order coordination and supply across India.",
   },
@@ -219,7 +219,7 @@ export default function IndustriesPage() {
                         }`}
                       >
                         <span>{ind.actionText || "Explore Solutions"}</span>
-                        <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                        <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={1.75} />
                       </Link>
                     </div>
                   </div>
@@ -293,14 +293,14 @@ export default function IndustriesPage() {
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-[#C5A262] text-[#0D2820] font-heading font-bold text-xs sm:text-sm hover:bg-[#D4AF37] transition shadow-md whitespace-nowrap"
                 >
                   <span>Discuss Your Requirement</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4" strokeWidth={1.75} />
                 </Link>
 
                 <Link
                   href="/products"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border border-white/25 text-white font-heading font-semibold text-xs sm:text-sm hover:bg-white/10 transition whitespace-nowrap"
                 >
-                  <LayoutGrid className="w-4 h-4 text-[#C5A262]" />
+                  <Package className="w-4 h-4 text-[#C5A262]" strokeWidth={1.75} />
                   <span>Explore Our Products</span>
                 </Link>
               </div>

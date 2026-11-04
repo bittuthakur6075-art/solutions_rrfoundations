@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-manrope: "Manrope", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #102A25;
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #102A25;
+  color: #FFFFFF;
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #D9B878;
+  color: #102A25;
+}
+
+/* Custom editorial scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1D19;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9B878;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8CB8D;
+}
+
+/* Luxury utilities */
+.bg-dark-forest {
+  background-color: #102A25;
+}
+
+.bg-dark-surface {
+  background-color: #203A33;
+}
+
+.text-gold-italic {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-style: italic;
+  color: #D9B878;
+}
+
+.border-dark-luxury {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.border-gold-subtle {
+  border-color: rgba(217, 184, 120, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5EADA 0%, #D9B878 50%, #B89650 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

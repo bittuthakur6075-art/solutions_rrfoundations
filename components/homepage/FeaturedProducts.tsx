@@ -42,7 +42,7 @@ export function FeaturedProducts() {
             className="text-sm font-heading font-bold text-[#182A25] hover:text-[#B89650] flex items-center gap-1.5 self-start md:self-end group"
           >
             <span>See Complete Catalogue ({PRODUCTS.length} Products)</span>
-            <ArrowRight className="w-4 h-4 text-[#D9B878] group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4 text-[#D9B878] group-hover:translate-x-1 transition-transform" strokeWidth={1.75} />
           </Link>
         </div>
 
@@ -83,13 +83,16 @@ export function FeaturedProducts() {
 
                   {/* Specifications snippet */}
                   <div className="mt-4 pt-3 border-t border-[#E8E2D7] space-y-1.5 text-xs text-[#5C6E66]">
-                    {Object.entries(prod.specifications).slice(0, 2).map(([key, val]) => (
-                      <div key={key} className="flex items-center justify-between">
-                        <span className="font-medium">{key}:</span>
-                        <span className="text-[#182A25] font-semibold truncate max-w-[170px]">
-                          {val}
-                        </span>
-                      </div>
+                    {Object.entries(prod.specifications)
+                      .filter(([key]) => !key.toLowerCase().includes("dimension"))
+                      .slice(0, 2)
+                      .map(([key, val]) => (
+                        <div key={key} className="flex items-center justify-between">
+                          <span className="font-medium">{key}:</span>
+                          <span className="text-[#182A25] font-semibold truncate max-w-[170px]">
+                            {val}
+                          </span>
+                        </div>
                     ))}
                   </div>
                 </div>
@@ -116,7 +119,7 @@ export function FeaturedProducts() {
                   }
                   className="w-full text-xs"
                 >
-                  <MessageSquare className="w-3.5 h-3.5 mr-1" />
+                  <MessageSquare className="w-3.5 h-3.5 mr-1" strokeWidth={1.75} />
                   Quote
                 </Button>
               </div>

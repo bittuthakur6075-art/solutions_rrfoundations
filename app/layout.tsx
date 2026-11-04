@@ -75,6 +75,40 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
   },
+  alternates: {
+    canonical: COMPANY_INFO.website,
+  },
+  verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
+    : undefined,
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": COMPANY_INFO.name,
+  "legalName": COMPANY_INFO.legalName,
+  "url": COMPANY_INFO.website,
+  "telephone": COMPANY_INFO.phone,
+  "email": COMPANY_INFO.email,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop No. 12, Om Vihar, Opposite Metro Pillar No. 702",
+    "addressLocality": "New Delhi",
+    "addressRegion": "Delhi",
+    "postalCode": "110059",
+    "addressCountry": "IN",
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 28.6219,
+    "longitude": 77.0583,
+  },
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "priceRange": "₹₹",
+  "sameAs": [
+    "https://wa.me/917428045813",
+  ],
 };
 
 export default function RootLayout({
@@ -87,6 +121,12 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable} ${inter.variable} ${playfair.variable} scroll-smooth`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col bg-forest-900 text-text-primary antialiased font-sans selection:bg-gold selection:text-forest-950">
         <Header />
         <main className="flex-1">{children}</main>

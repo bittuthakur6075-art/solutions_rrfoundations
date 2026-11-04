@@ -13,11 +13,12 @@ import {
   Mail,
   Search,
   Factory,
-  Box,
+  Boxes,
   Truck,
-  Layers,
+  Palette,
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { WhatsAppIcon } from "@/components/ui/Icon";
 import { CATEGORIES } from "@/lib/data/categories";
 import { COMPANY_INFO, getWhatsAppUrl } from "@/lib/utils";
 import { EnquiryModal } from "@/components/ui/EnquiryModal";
@@ -62,22 +63,22 @@ export function Header() {
           {/* Left: Manufacturing Indicators */}
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-4 text-white/85">
             <span className="flex items-center gap-1.5 hover:text-gold transition">
-              <Factory className="w-3.5 h-3.5 text-[#D9B878]" />
+              <Factory className="w-3.5 h-3.5 text-[#D9B878]" strokeWidth={1.75} />
               <span>Direct Manufacturer</span>
             </span>
             <span className="text-white/20">|</span>
             <span className="flex items-center gap-1.5 hover:text-gold transition">
-              <Layers className="w-3.5 h-3.5 text-[#D9B878]" />
+              <Palette className="w-3.5 h-3.5 text-[#D9B878]" strokeWidth={1.75} />
               <span>Custom Branding</span>
             </span>
             <span className="hidden sm:inline text-white/20">|</span>
             <span className="hidden sm:flex items-center gap-1.5 hover:text-gold transition">
-              <Box className="w-3.5 h-3.5 text-[#D9B878]" />
+              <Boxes className="w-3.5 h-3.5 text-[#D9B878]" strokeWidth={1.75} />
               <span>Bulk Production</span>
             </span>
             <span className="hidden md:inline text-white/20">|</span>
             <span className="hidden md:flex items-center gap-1.5 hover:text-gold transition">
-              <Truck className="w-3.5 h-3.5 text-[#D9B878]" />
+              <Truck className="w-3.5 h-3.5 text-[#D9B878]" strokeWidth={1.75} />
               <span>Pan-India Supply</span>
             </span>
           </div>
@@ -88,7 +89,7 @@ export function Header() {
               href={`tel:${COMPANY_INFO.phone}`}
               className="flex items-center gap-1.5 hover:text-gold transition font-medium"
             >
-              <Phone className="w-3.5 h-3.5 text-[#D9B878]" />
+              <Phone className="w-3.5 h-3.5 text-[#D9B878]" strokeWidth={1.75} />
               <span>{COMPANY_INFO.phone}</span>
             </a>
             <span className="text-white/20">|</span>
@@ -96,7 +97,7 @@ export function Header() {
               href={`mailto:${COMPANY_INFO.email}`}
               className="flex items-center gap-1.5 hover:text-gold transition font-medium"
             >
-              <Mail className="w-3.5 h-3.5 text-[#D9B878]" />
+              <Mail className="w-3.5 h-3.5 text-[#D9B878]" strokeWidth={1.75} />
               <span>sales@rrfoundations.in</span>
             </a>
           </div>
@@ -212,9 +213,10 @@ export function Header() {
                                 setMegaMenuOpen(false);
                                 setIsModalOpen(true);
                               }}
-                              className="text-xs font-heading font-bold text-[#D9B878] hover:underline"
+                              className="text-xs font-heading font-bold text-[#D9B878] hover:underline inline-flex items-center gap-1.5"
                             >
-                              Request Custom Spec Prototype →
+                              <span>Request Custom Spec Prototype</span>
+                              <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.75} />
                             </button>
                           </div>
                         </div>
@@ -301,16 +303,21 @@ export function Header() {
             <div className="flex items-center gap-2 lg:hidden">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="px-3.5 py-1.5 rounded-lg bg-[#D9B878] text-[#102A25] font-heading font-bold text-xs"
+                className="px-3.5 py-1.5 rounded-lg bg-[#D9B878] text-[#102A25] font-heading font-bold text-xs inline-flex items-center gap-1"
               >
-                Quote →
+                <span>Quote</span>
+                <ArrowRight className="w-3 h-3" strokeWidth={1.75} />
               </button>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="p-2 text-white hover:bg-white/10 rounded-lg transition"
                 aria-label="Toggle navigation menu"
               >
-                {mobileMenuOpen ? <X className="w-6 h-6 text-[#D9B878]" /> : <Menu className="w-6 h-6" />}
+                {mobileMenuOpen ? (
+                  <X className="w-6 h-6 text-[#D9B878]" strokeWidth={1.75} />
+                ) : (
+                  <Menu className="w-6 h-6" strokeWidth={1.75} />
+                )}
               </button>
             </div>
           </div>
@@ -378,18 +385,20 @@ export function Header() {
                   setMobileMenuOpen(false);
                   setIsModalOpen(true);
                 }}
-                className="w-full py-3.5 bg-[#D9B878] text-[#102A25] rounded-xl font-heading font-bold text-sm"
+                className="w-full py-3.5 bg-[#D9B878] text-[#102A25] rounded-xl font-heading font-bold text-sm inline-flex items-center justify-center gap-2"
               >
-                Request a Bulk Quote →
+                <span>Request a Bulk Quote</span>
+                <ArrowRight className="w-4 h-4" strokeWidth={1.75} />
               </button>
               <Button
                 variant="outline"
                 size="md"
-                className="w-full border-white/20"
+                className="w-full border-white/20 gap-2"
                 href={getWhatsAppUrl()}
                 external
               >
-                Chat on WhatsApp (+91 74280 45813)
+                <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                <span>Chat on WhatsApp (+91 74280 45813)</span>
               </Button>
               <p className="text-center text-xs text-white/60">
                 {COMPANY_INFO.address}

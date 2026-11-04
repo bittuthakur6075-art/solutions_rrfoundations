@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, MessageCircle, Loader2 } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, Loader2 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/Icon";
 import { COMPANY_INFO, getWhatsAppUrl } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 
@@ -94,7 +95,7 @@ export default function ContactPage() {
 
             <div className="space-y-6 text-sm">
               <div className="flex items-start gap-3.5">
-                <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.75} />
                 <div>
                   <h4 className="font-heading font-semibold text-white mb-0.5">Physical Address</h4>
                   <p className="text-white/70 leading-relaxed text-xs sm:text-sm font-light">
@@ -104,7 +105,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-3.5">
-                <Phone className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                <Phone className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.75} />
                 <div>
                   <h4 className="font-heading font-semibold text-white mb-0.5">Telephone &amp; Orders</h4>
                   <a href={`tel:${COMPANY_INFO.phone}`} className="text-gold hover:underline text-sm font-semibold">
@@ -115,7 +116,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-3.5">
-                <Mail className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                <Mail className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.75} />
                 <div>
                   <h4 className="font-heading font-semibold text-white mb-0.5">Official Email</h4>
                   <a href={`mailto:${COMPANY_INFO.email}`} className="text-gold hover:underline text-sm">
@@ -125,7 +126,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-3.5">
-                <Clock className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                <Clock className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.75} />
                 <div>
                   <h4 className="font-heading font-semibold text-white mb-0.5">Operational Schedule</h4>
                   <p className="text-xs text-white/70 font-light">{COMPANY_INFO.hours}</p>
@@ -140,7 +141,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-4 bg-[#25D366] text-white rounded-xl font-heading font-semibold text-sm flex items-center justify-center gap-2 hover:bg-[#20ba59] transition shadow-card"
               >
-                <MessageCircle className="w-4 h-4 fill-current" />
+                <WhatsAppIcon className="w-4 h-4 text-white" />
                 <span>Instant WhatsApp Concierge</span>
               </a>
             </div>
@@ -150,7 +151,7 @@ export default function ContactPage() {
           <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-[#E8E2D7] shadow-luxury">
             {submitted ? (
               <div className="text-center py-12">
-                <CheckCircle2 className="w-16 h-16 text-brand-success mx-auto mb-4" />
+                <CheckCircle2 className="w-16 h-16 text-brand-success mx-auto mb-4" strokeWidth={1.75} />
                 <h3 className="font-serif text-3xl text-[#182A25] mb-2">
                   Message Dispatched Successfully
                 </h3>
@@ -255,7 +256,7 @@ export default function ContactPage() {
                     </>
                   ) : (
                     <>
-                      <Send className="w-4 h-4 mr-2" />
+                      <Send className="w-4 h-4 mr-2" strokeWidth={1.75} />
                       <span>Send Enquiry to Delhi Factory</span>
                     </>
                   )}

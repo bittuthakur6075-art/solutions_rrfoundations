@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldCheck, Factory, Ruler, Clock, Truck, Layers } from "lucide-react";
+import { ShieldCheck, Factory, Ruler, Clock, Truck, Boxes } from "lucide-react";
 
 export function WhyChooseUs() {
   const points = [
@@ -29,7 +29,7 @@ export function WhyChooseUs() {
       desc: "Heavy-duty carton packaging with individual scratch-resistant sleeves. Doorstep delivery across industrial corridors and corporate hubs.",
     },
     {
-      icon: Layers,
+      icon: Boxes,
       title: "Flexible Batch Scalability",
       desc: "Agile batch manufacturing supporting sample pilot runs of 50 units up to enterprise rollouts exceeding 50,000+ units.",
     },
@@ -65,7 +65,7 @@ export function WhyChooseUs() {
                 className="bg-white p-8 rounded-2xl border border-[#E8E2D7] hover:border-[#D9B878] shadow-card hover:shadow-luxury transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#102A25] text-[#D9B878] flex items-center justify-center mb-5 shadow-sm">
-                  <Icon className="w-6 h-6" />
+                  <Icon className="w-6 h-6" strokeWidth={1.75} />
                 </div>
                 <h3 className="font-heading font-bold text-lg text-[#182A25] mb-2">
                   {pt.title}

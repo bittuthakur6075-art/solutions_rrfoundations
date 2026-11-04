@@ -22,5 +22,41 @@
     "quantity": "1000",
     "message": "Requesting antique copper badge pin samples with custom laser engraved logo.",
     "status": "New"
+  },
+  {
+    "id": "enq_1793775590308_id154",
+    "timestamp": "2026-11-04T06:59:50.308Z",
+    "fullName": "Test Procurement Officer",
+    "email": "procurement@corporate.test",
+    "phone": "+91 98765 43210",
+    "productName": "Custom Precision Metal Badge Pin",
+    "category": "metal-badges",
+    "quantity": "500 units",
+    "message": "Testing automated B2B quote request verification.",
+    "status": "New"
+  },
+  {
+    "id": "enq_1793776664635_qkynn",
+    "timestamp": "2026-11-04T07:17:44.635Z",
+    "fullName": "Direct QA Tester",
+    "email": "qa@rrfoundations.org",
+    "phone": "+91 99999 11111",
+    "productName": "Traditional Divine Photo Frame",
+    "category": "photo-frames-awards",
+    "quantity": "250 units",
+    "message": "Controlled QA test of customer enquiry submission.",
+    "status": "New"
+  },
+  {
+    "id": "enq_1793777008105_i5mb9",
+    "timestamp": "2026-11-04T07:23:28.105Z",
+    "fullName": "Final Verification User",
+    "email": "verification@corporate.test",
+    "phone": "+91 98765 43210",
+    "productName": "Verified Badge Pin",
+    "category": "badges-lapel-pins",
+    "quantity": "500",
+    "message": "Final verified deployment check.",
+    "status": "New"
   }
 ]
