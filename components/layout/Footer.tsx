@@ -125,11 +125,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/admin" className="text-white/70 hover:text-gold transition">
-                  Admin Dashboard
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact" className="text-white/70 hover:text-gold transition">
                   Contact &amp; Location
                 </Link>
@@ -184,9 +179,6 @@ export function Footer() {
             </Link>
             <Link href="/terms-and-conditions" className="hover:text-gold transition">
               Terms &amp; Conditions
-            </Link>
-            <Link href="/admin" className="hover:text-gold transition">
-              Staff Portal
             </Link>
           </div>
         </div>
