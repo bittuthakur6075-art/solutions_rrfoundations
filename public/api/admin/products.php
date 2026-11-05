@@ -326,11 +326,10 @@ if ($method === 'PUT') {
     jsonResponse(['success' => true, 'id' => $id, 'slug' => $slug, 'message' => 'Product updated successfully']);
 }
 
-// 6. DELETE: Delete Product
+// 6. DELETE: Permanently Delete Product
 if ($method === 'DELETE') {
     verifyCsrfToken();
     $id = $_GET['id'] ?? null;
-    $hard = !empty($_GET['hard']) && $_GET['hard'] === 'true';
 
     if (!$id) jsonError('Product ID required', 400);
 
@@ -339,17 +338,10 @@ if ($method === 'DELETE') {
     $prod = $stmt->fetch();
     if (!$prod) jsonError('Product not found', 404);
 
-    if ($hard) {
-        $del = $db->prepare("DELETE FROM products WHERE id = ?");
-        $del->execute([$id]);
-        logAdminActivity($admin['id'], $admin['full_name'], 'delete_product_permanent', 'products', $id, "Permanently deleted '{$prod['title']}' ({$id})");
-        jsonResponse(['success' => true, 'message' => 'Product permanently deleted']);
-    } else {
-        $arc = $db->prepare("UPDATE products SET status = 'archived' WHERE id = ?");
-        $arc->execute([$id]);
-        logAdminActivity($admin['id'], $admin['full_name'], 'archive_product', 'products', $id, "Archived '{$prod['title']}' ({$id})");
-        jsonResponse(['success' => true, 'message' => 'Product archived successfully']);
-    }
+    $del = $db->prepare("DELETE FROM products WHERE id = ?");
+    $del->execute([$id]);
+    logAdminActivity($admin['id'], $admin['full_name'], 'delete_product_permanent', 'products', $id, "Permanently deleted '{$prod['title']}' ({$id})");
+    jsonResponse(['success' => true, 'message' => "Product '{$prod['title']}' permanently deleted"]);
 }
 
 jsonError('Method not supported', 405);

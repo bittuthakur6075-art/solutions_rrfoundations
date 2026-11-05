@@ -7942,4 +7942,11 @@ INSERT INTO `website_settings` (`setting_key`, `setting_value`, `setting_group`)
 VALUES ('meta_description', 'Direct physical manufacturing of precision metal badges, conference ID card kits, custom acrylic & MDF products, corporate drinkware, and executive gift hampers in New Delhi.', 'seo')
 ON DUPLICATE KEY UPDATE `setting_value` = VALUES(`setting_value`);
 
+-- 5. Initial Superadmin Account
+-- Email: admin@rrfoundations.org
+-- Temporary Demo Password: Admin@RR2026!
+INSERT INTO `admins` (`id`, `email`, `password_hash`, `full_name`, `role`, `status`, `created_at`)
+VALUES (1, 'admin@rrfoundations.org', '$2y$10$WYMjysb2WpbleNEdLCtLCOew.4yV4Tk7kSCLo.NK4/Skm/.muNsBC', 'Executive Administrator', 'superadmin', 'active', NOW())
+ON DUPLICATE KEY UPDATE `password_hash` = VALUES(`password_hash`), `status` = 'active';
+
 SET FOREIGN_KEY_CHECKS = 1;

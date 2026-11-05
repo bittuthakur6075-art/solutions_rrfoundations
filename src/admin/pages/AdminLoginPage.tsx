@@ -139,6 +139,21 @@ export function AdminLoginPage() {
             </button>
           </form>
 
+          {/* Temporary Demo Credentials Notice */}
+          <div className="mt-5 p-3 rounded-xl bg-[#FAF8F5] border border-[#E8E2D7] text-[11px] text-neutral-600 space-y-1">
+            <div className="flex items-center justify-between font-semibold text-[#102A25]">
+              <span>Temporary Demo Access</span>
+              <span className="text-[10px] text-[#D9B878] font-bold uppercase tracking-wider">Initial</span>
+            </div>
+            <div className="flex justify-between font-mono text-[10px] text-neutral-500">
+              <span>admin@rrfoundations.org</span>
+              <span>Admin@RR2026!</span>
+            </div>
+            <p className="text-[10px] text-neutral-400 italic pt-0.5">
+              Change this temporary password immediately after login via Admin Profile.
+            </p>
+          </div>
+
           <div className="mt-6 pt-5 border-t border-neutral-100 flex items-center justify-center gap-1.5 text-[11px] text-neutral-400">
             <ShieldCheck className="w-3.5 h-3.5 text-[#102A25]" />
             <span>256-Bit Encrypted B2B Administrative Session</span>

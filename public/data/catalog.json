@@ -40,7 +40,13 @@
     "archivedDuplicateIds": [
       "prod_photo-frames-awards_02",
       "prod_photo-frames-awards_03"
-    ]
+    ],
+    "status": "archived",
+    "sku": "",
+    "categoryId": "photo-frames-awards",
+    "displayOrder": 0,
+    "canonicalUrl": "",
+    "updated_at": "2026-11-05T12:08:36.758Z"
   },
   {
     "id": "prod_photo-frames-awards_04",
@@ -180,7 +186,8 @@
       "Memento"
     ],
     "seoTitle": "Traditional Divine & Corporate Photo Frame — Model FR-07 | Direct Manufacturer RR Foundations",
-    "seoDescription": "Intricately detailed gold foil embossed frame and commemorative award memento. Manufactured in Delhi by RR Foundations."
+    "seoDescription": "Intricately detailed gold foil embossed frame and commemorative award memento. Manufactured in Delhi by RR Foundations.",
+    "status": "archived"
   },
   {
     "id": "prod_photo-frames-awards_08",

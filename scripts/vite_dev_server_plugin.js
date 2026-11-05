@@ -4,6 +4,8 @@
 const fs = require('fs');
 const path = require('path');
 
+let currentAdminPassword = 'Admin@RR2026!'; // Temporary demo password
+
 let mockSession = {
   id: 1,
   email: 'admin@rrfoundations.org',
@@ -12,7 +14,7 @@ let mockSession = {
   csrfToken: 'dev_csrf_token_rrfoundations_2026'
 };
 
-let isAuthenticated = true; // Auto-logged in for seamless dev workflow
+let isAuthenticated = false; // Strictly requires login
 let leadNotes = {};
 let leadActivities = {};
 
@@ -147,9 +149,11 @@ function viteApiMockPlugin() {
           const action = urlObj.searchParams.get('action') || 'me';
           if (action === 'login' && method === 'POST') {
             const body = await readBody(req);
-            if (body.email && body.password) {
+            const inputEmail = (body.email || '').trim().toLowerCase();
+            const inputPass = body.password || '';
+
+            if (inputEmail === mockSession.email.toLowerCase() && inputPass === currentAdminPassword) {
               isAuthenticated = true;
-              mockSession.email = body.email;
               return sendJson(res, {
                 success: true,
                 user: {
@@ -161,7 +165,7 @@ function viteApiMockPlugin() {
                 csrfToken: mockSession.csrfToken
               });
             } else {
-              return sendJson(res, { success: false, message: 'Email and password required' }, 400);
+              return sendJson(res, { success: false, message: 'Invalid administrative email or password. Access denied.' }, 401);
             }
           }
 
@@ -183,11 +187,20 @@ function viteApiMockPlugin() {
 
           if (action === 'logout') {
             isAuthenticated = false;
-            return sendJson(res, { success: true, message: 'Logged out' });
+            return sendJson(res, { success: true, message: 'Logged out successfully' });
           }
 
           if (action === 'change-password') {
-            return sendJson(res, { success: true, message: 'Password updated successfully' });
+            const body = await readBody(req);
+            if (!isAuthenticated) return sendJson(res, { success: false, message: 'Unauthorized' }, 401);
+            if (body.currentPassword !== currentAdminPassword) {
+              return sendJson(res, { success: false, message: 'Current password does not match.' }, 400);
+            }
+            if (!body.newPassword || body.newPassword.length < 8) {
+              return sendJson(res, { success: false, message: 'New password must be at least 8 characters.' }, 400);
+            }
+            currentAdminPassword = body.newPassword;
+            return sendJson(res, { success: true, message: 'Password updated successfully. Keep your new password secure.' });
           }
         }
 
@@ -600,7 +613,6 @@ function viteApiMockPlugin() {
           if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
 
           if (method === 'GET') {
-            // Read images in uploadsDir + product images
             const files = fs.readdirSync(uploadsDir).map((file, i) => ({
               id: i + 1,
               filename: file,
@@ -619,6 +631,60 @@ function viteApiMockPlugin() {
               media: files,
               pagination: { total: files.length, page: 1, limit: 50, totalPages: 1 }
             });
+          }
+
+          if (method === 'POST') {
+            const chunks = [];
+            req.on('data', chunk => chunks.push(chunk));
+            req.on('end', () => {
+              const buffer = Buffer.concat(chunks);
+              const contentType = req.headers['content-type'] || '';
+              let filename = `prod_upload_${Date.now()}_${Math.random().toString(36).substring(2, 6)}.png`;
+              let originalName = 'product-image.png';
+
+              if (contentType.includes('multipart/form-data')) {
+                const boundaryMatch = contentType.match(/boundary=(?:"([^"]+)"|([^;]+))/i);
+                if (boundaryMatch) {
+                  const boundary = boundaryMatch[1] || boundaryMatch[2];
+                  const raw = buffer.toString('binary');
+                  const parts = raw.split('--' + boundary);
+                  for (const part of parts) {
+                    const match = part.match(/filename="([^"]+)"/);
+                    if (match) {
+                      originalName = match[1];
+                      const ext = path.extname(originalName) || '.png';
+                      filename = `img_${Date.now()}_${Math.random().toString(36).substring(2, 6)}${ext}`;
+                      const headerEnd = part.indexOf('\r\n\r\n');
+                      if (headerEnd !== -1) {
+                        const fileBinary = part.substring(headerEnd + 4, part.lastIndexOf('\r\n'));
+                        fs.writeFileSync(path.join(uploadsDir, filename), Buffer.from(fileBinary, 'binary'));
+                        break;
+                      }
+                    }
+                  }
+                }
+              }
+
+              const publicPath = `/assets/uploads/${filename}`;
+              return sendJson(res, {
+                success: true,
+                media: {
+                  id: Date.now(),
+                  filename,
+                  originalName,
+                  filePath: publicPath,
+                  file_path: publicPath,
+                  fileSize: buffer.length,
+                  mimeType: 'image/png'
+                }
+              }, 201);
+            });
+            return;
+          }
+
+          if (method === 'DELETE') {
+            const id = urlObj.searchParams.get('id');
+            return sendJson(res, { success: true, message: 'Media asset deleted successfully' });
           }
         }
 
