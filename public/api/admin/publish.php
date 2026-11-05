@@ -36,7 +36,7 @@ $prodStmt = $db->query("
     SELECT id, title, slug, sku, category_id, category_name, short_description, full_description, thumbnail, images, materials, specifications, featured, min_quantity, tags, aliases, seo_title, seo_description, canonical_url, display_order
     FROM products
     WHERE status = 'published'
-    ORDER BY display_order ASC, id ASC
+    ORDER BY display_order ASC, created_at DESC, id DESC
 ");
 $products = $prodStmt->fetchAll();
 foreach ($products as &$p) {

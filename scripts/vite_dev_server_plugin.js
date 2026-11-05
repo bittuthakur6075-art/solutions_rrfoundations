@@ -29,6 +29,13 @@ function getCatalog() {
 function saveCatalog(data) {
   const p = path.join(__dirname, '../public/data/catalog.json');
   fs.writeFileSync(p, JSON.stringify(data, null, 2), 'utf8');
+
+  // Also sync lib/data/products.ts so public storefront & prerenderers have the new products at the top immediately
+  try {
+    const tsPath = path.join(__dirname, '../lib/data/products.ts');
+    const tsContent = `import { Product } from "@/types";\n\nexport const PRODUCTS: Product[] = ${JSON.stringify(data, null, 2)};\n`;
+    fs.writeFileSync(tsPath, tsContent, 'utf8');
+  } catch (err) {}
 }
 
 function getCategories() {

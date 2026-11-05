@@ -147,9 +147,9 @@ export function AdminProductEditor({
       setFormData((prev) => ({
         ...prev,
         thumbnail: uploadedPath,
-        images: prev.images.includes(uploadedPath) ? prev.images : [uploadedPath, ...prev.images],
+        images: [uploadedPath, ...prev.images.filter((img) => img !== uploadedPath)],
       }));
-      toast.success("Thumbnail uploaded successfully!");
+      toast.success("Thumbnail uploaded and placed at the top!");
     }
   };
 
@@ -168,10 +168,10 @@ export function AdminProductEditor({
     if (newPaths.length > 0) {
       setFormData((prev) => ({
         ...prev,
-        thumbnail: prev.thumbnail || newPaths[0],
-        images: [...prev.images, ...newPaths.filter((p) => !prev.images.includes(p))],
+        thumbnail: newPaths[0],
+        images: [...newPaths, ...prev.images.filter((p) => !newPaths.includes(p))],
       }));
-      toast.success(`Uploaded ${newPaths.length} product photo(s)!`);
+      toast.success(`Uploaded ${newPaths.length} photo(s) at the top!`);
     }
   };
 

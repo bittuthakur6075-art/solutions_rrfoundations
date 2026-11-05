@@ -225,7 +225,15 @@ if ($method === 'POST') {
     $featured = !empty($payload['featured']) ? 1 : 0;
     $minQuantity = max(1, (int)($payload['minQuantity'] ?? 100));
     $status = in_array($payload['status'] ?? '', ['published', 'draft', 'archived']) ? $payload['status'] : 'published';
-    $displayOrder = (int)($payload['displayOrder'] ?? 0);
+
+    // When display order is not specified, place new product at the very top (lowest display_order)
+    if (!isset($payload['displayOrder']) || $payload['displayOrder'] === '' || $payload['displayOrder'] === 0) {
+        $minStmt = $db->query("SELECT COALESCE(MIN(display_order), 0) - 1 as next_order FROM products");
+        $displayOrder = (int)($minStmt->fetch()['next_order'] ?? -1);
+    } else {
+        $displayOrder = (int)$payload['displayOrder'];
+    }
+
     $seoTitle = trim($payload['seoTitle'] ?? ($title . ' | Direct Manufacturer RR Foundations'));
     $seoDesc  = trim($payload['seoDescription'] ?? ($shortDesc . ' Manufactured in New Delhi by RR Foundations.'));
     $canonicalUrl = !empty($payload['canonicalUrl']) ? trim($payload['canonicalUrl']) : null;

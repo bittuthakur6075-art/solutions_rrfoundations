@@ -12,12 +12,22 @@ import { EnquiryModal } from "@/components/ui/EnquiryModal";
 export default function ProductsPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [productList, setProductList] = useState(PRODUCTS);
   const [selectedProduct, setSelectedProduct] = useState<{
     name: string;
     category: string;
   } | null>(null);
 
   useEffect(() => {
+    fetch("/data/catalog.json")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setProductList(data);
+        }
+      })
+      .catch(() => {});
+
     if (typeof window === "undefined") return;
     const checkHashOrQuery = () => {
       const hash = window.location.hash.replace("#", "").toLowerCase();
@@ -52,7 +62,7 @@ export default function ProductsPage() {
 
   const filteredProducts = useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
-    return PRODUCTS.filter((p) => {
+    return productList.filter((p) => {
       const matchesCat = selectedCategory === "all" || p.category === selectedCategory;
       if (!matchesCat) return false;
       if (!term) return true;
