@@ -1,9 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+// @ts-ignore
+import viteApiMockPlugin from "./scripts/vite_dev_server_plugin.js";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), viteApiMockPlugin()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./"),

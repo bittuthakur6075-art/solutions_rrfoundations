@@ -84,7 +84,7 @@ if (!empty($errors)) {
     exit;
 }
 
-// 6. Record Generation
+// 6. Record Generation & Database Insertion
 $submissionId = "enq_" . time() . "_" . bin2hex(random_bytes(3));
 $timestamp    = date("c");
 
@@ -102,6 +102,26 @@ $submission = [
     "status"      => "New",
     "ip"          => $_SERVER['REMOTE_ADDR'] ?? 'unknown'
 ];
+
+// 6.1 Database Lead Persistence (Hostinger MySQL)
+if (file_exists(__DIR__ . DIRECTORY_SEPARATOR . 'config.php')) {
+    require_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php';
+    $db = getDbConnection();
+    if ($db) {
+        try {
+            $leadStmt = $db->prepare("
+                INSERT INTO leads (id, full_name, company_name, email, phone, product_name, category, quantity, message, status, ip_address, created_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'New', ?, NOW())
+            ");
+            $leadStmt->execute([
+                $submissionId, $fullName, $companyName ?: null, $email, $phone,
+                $productName, $category, $quantity, $message, $_SERVER['REMOTE_ADDR'] ?? null
+            ]);
+        } catch (Exception $e) {
+            error_log('Failed to persist lead to MySQL: ' . $e->getMessage());
+        }
+    }
+}
 
 // 7. Secure Data Storage — Exclusively Outside public_html
 // All customer submissions are stored in an unroutable directory above web root.

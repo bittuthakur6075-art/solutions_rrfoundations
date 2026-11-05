@@ -12,23 +12,35 @@
   RewriteCond %{HTTP:X-Forwarded-SSL} !=on
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # 2. Block direct web access to sensitive directories
-  RewriteRule ^(data|scripts|src|docs|node_modules)(\/.*)?$ - [F,L]
+  # 2. Block direct web access to internal development directories
+  RewriteRule ^(scripts|src|docs|node_modules)(\/.*)?$ - [F,L]
 
-  # 3. Route /api/enquiry to native PHP handler
+  # 3. Route API endpoints to native PHP handlers
   RewriteRule ^api/enquiry/?$ /api/enquiry.php [L,QSA]
+  RewriteRule ^api/admin/([a-zA-Z0-9_-]+)/?$ /api/admin/$1.php [L,QSA]
 
   # 4. Serve existing static files & prerendered directories directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # 5. React SPA Fallback for client-side routing
+  # 5. React SPA Fallback for client-side routing (including /admin/*)
   RewriteRule ^ index.html [L]
 </IfModule>
 
-# Security: Deny access to sensitive files, logs, backups, and configurations
-<FilesMatch "(\.(env|git|json|lock|config|bak|sql|log|md|sh|ps1)|composer|package)">
+# Security: Deny access to sensitive server files, logs, backups, and configs
+<FilesMatch "(?i)\.(env|git|lock|config|bak|sql|log|md|sh|ps1|yml|yaml)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# Explicitly block sensitive build configs but allow public data json files
+<FilesMatch "(?i)^(package|package-lock|composer|tsconfig|vite\.config)\.(json|ts|js|mjs)$">
   <IfModule mod_authz_core.c>
     Require all denied
   </IfModule>
@@ -51,6 +63,7 @@
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
   ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
@@ -63,5 +76,5 @@
 
 # Enable Gzip / Deflate Compression
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript font/woff2 image/svg+xml
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript font/woff2 image/svg+xml application/json
 </IfModule>
