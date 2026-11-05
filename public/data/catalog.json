@@ -1,5 +1,37 @@
 [
   {
+    "id": "prod_badges-lapel-pins_mrha",
+    "title": "Keyholder",
+    "slug": "k",
+    "sku": "RRF-KA9W",
+    "category": "badges-lapel-pins",
+    "categoryName": "Badges & Lapel Pins",
+    "shortDescription": "Keyholder in MDF",
+    "fullDescription": "Keyholder in MDF",
+    "thumbnail": "/assets/uploads/img_1793882066877_6agp.jpg",
+    "images": [
+      "/assets/uploads/img_1793882066877_6agp.jpg"
+    ],
+    "materials": [
+      "Stainless Steel",
+      "High-Grade Acrylic"
+    ],
+    "specifications": {
+      "Standard Dimensions": "Custom sizing available",
+      "Minimum Order": "100 Units"
+    },
+    "tags": [
+      "Custom Badges",
+      "Corporate ID"
+    ],
+    "featured": false,
+    "minQuantity": 1000,
+    "status": "published",
+    "displayOrder": 0,
+    "seoTitle": "",
+    "seoDescription": ""
+  },
+  {
     "id": "prod_photo-frames-awards_01",
     "title": "Traditional Divine & Corporate Photo Frame — Model FR-01",
     "slug": "traditional-divine-corporate-photo-frame-model-fr-01",
@@ -263,7 +295,8 @@
       "Memento"
     ],
     "seoTitle": "Traditional Divine & Corporate Photo Frame — Model FR-10 | Direct Manufacturer RR Foundations",
-    "seoDescription": "Intricately detailed gold foil embossed frame and commemorative award memento. Manufactured in Delhi by RR Foundations."
+    "seoDescription": "Intricately detailed gold foil embossed frame and commemorative award memento. Manufactured in Delhi by RR Foundations.",
+    "status": "archived"
   },
   {
     "id": "prod_photo-frames-awards_11",
