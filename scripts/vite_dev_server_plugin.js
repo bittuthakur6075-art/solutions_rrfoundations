@@ -323,11 +323,22 @@ function viteApiMockPlugin() {
 
             const total = filtered.length;
             const start = (page - 1) * limit;
-            const paged = filtered.slice(start, start + limit);
+            const paged = filtered.slice(start, start + limit).map((p, idx) => ({
+              ...p,
+              status: p.status || 'published',
+              sku: p.sku || `RRF-${p.id.replace('prod_', '').toUpperCase().slice(0, 10)}`,
+              categoryId: p.categoryId || p.category || 'badges-lapel-pins',
+              categoryName: p.categoryName || p.category_name || p.category || 'General',
+              displayOrder: p.displayOrder ?? p.display_order ?? (start + idx + 1),
+              minQuantity: p.minQuantity ?? p.min_quantity ?? 100,
+              updatedAt: p.updatedAt || p.updated_at || new Date().toISOString()
+            }));
 
             return sendJson(res, {
               success: true,
               products: paged,
+              total,
+              totalPages: Math.ceil(total / limit),
               pagination: {
                 total,
                 page,

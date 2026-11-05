@@ -21,6 +21,7 @@ import NotFoundPage from "@/src/pages/NotFoundPage";
 import { AdminAuthProvider } from "./admin/context/AdminAuthContext";
 import { ToastProvider } from "./admin/components/Toast";
 import { AdminLayout } from "./admin/components/AdminLayout";
+import { ErrorBoundary } from "./admin/components/ErrorBoundary";
 
 // Admin Pages
 import { AdminLoginPage } from "./admin/pages/AdminLoginPage";
@@ -41,25 +42,27 @@ export function App() {
   // Isolated Admin Panel Shell (B2B SaaS experience, independent from public storefront)
   if (isAdminRoute) {
     return (
-      <ToastProvider>
-        <AdminAuthProvider>
-          <Routes>
-            <Route path="/admin/login" element={<AdminLoginPage />} />
-            <Route path="/admin" element={<AdminLayout />}>
-              <Route index element={<AdminDashboardPage />} />
-              <Route path="products" element={<AdminProductsPage />} />
-              <Route path="categories" element={<AdminCategoriesPage />} />
-              <Route path="leads" element={<AdminLeadsPage />} />
-              <Route path="media" element={<AdminMediaPage />} />
-              <Route path="seo" element={<AdminSeoPage />} />
-              <Route path="settings" element={<AdminSettingsPage />} />
-              <Route path="logs" element={<AdminLogsPage />} />
-              <Route path="profile" element={<AdminProfilePage />} />
-            </Route>
-            <Route path="/admin/*" element={<NotFoundPage />} />
-          </Routes>
-        </AdminAuthProvider>
-      </ToastProvider>
+      <ErrorBoundary>
+        <ToastProvider>
+          <AdminAuthProvider>
+            <Routes>
+              <Route path="/admin/login" element={<AdminLoginPage />} />
+              <Route path="/admin" element={<AdminLayout />}>
+                <Route index element={<AdminDashboardPage />} />
+                <Route path="products" element={<AdminProductsPage />} />
+                <Route path="categories" element={<AdminCategoriesPage />} />
+                <Route path="leads" element={<AdminLeadsPage />} />
+                <Route path="media" element={<AdminMediaPage />} />
+                <Route path="seo" element={<AdminSeoPage />} />
+                <Route path="settings" element={<AdminSettingsPage />} />
+                <Route path="logs" element={<AdminLogsPage />} />
+                <Route path="profile" element={<AdminProfilePage />} />
+              </Route>
+              <Route path="/admin/*" element={<NotFoundPage />} />
+            </Routes>
+          </AdminAuthProvider>
+        </ToastProvider>
+      </ErrorBoundary>
     );
   }
 

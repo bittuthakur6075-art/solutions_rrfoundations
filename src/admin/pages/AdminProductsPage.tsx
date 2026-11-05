@@ -116,8 +116,8 @@ export function AdminProductsPage() {
 
         if (res.ok && data.success) {
           setProducts(data.products || []);
-          setTotalCount(data.total || 0);
-          setTotalPages(data.totalPages || 1);
+          setTotalCount(data.total ?? data.pagination?.total ?? (data.products?.length || 0));
+          setTotalPages(data.totalPages ?? data.pagination?.totalPages ?? 1);
         } else {
           toast.error(data.message || "Failed to load products");
         }
@@ -463,37 +463,42 @@ export function AdminProductsPage() {
                           )}
                         </div>
                         <div className="flex items-center gap-2 mt-0.5 text-[11px] text-neutral-400 font-mono">
-                          <span>SKU: {p.sku}</span>
+                          <span>SKU: {p.sku || p.id.replace("prod_", "").toUpperCase()}</span>
                           <span>•</span>
-                          <span>MOQ: {p.minQuantity}</span>
+                          <span>MOQ: {p.minQuantity ?? 100}</span>
                         </div>
                       </td>
 
                       {/* Category */}
                       <td className="p-4">
                         <span className="inline-block px-2.5 py-1 rounded-md text-[11px] font-medium bg-neutral-100 text-neutral-700">
-                          {p.categoryName || p.categoryId}
+                          {p.categoryName || p.categoryId || "General"}
                         </span>
                       </td>
 
                       {/* Status */}
                       <td className="p-4">
-                        <span
-                          className={`inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold ${
-                            p.status === "published"
-                              ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                              : p.status === "draft"
-                              ? "bg-amber-50 text-amber-700 border border-amber-200"
-                              : "bg-neutral-100 text-neutral-600 border border-neutral-200"
-                          }`}
-                        >
-                          {p.status.charAt(0).toUpperCase() + p.status.slice(1)}
-                        </span>
+                        {(() => {
+                          const status = p.status || "published";
+                          return (
+                            <span
+                              className={`inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold ${
+                                status === "published"
+                                  ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                                  : status === "draft"
+                                  ? "bg-amber-50 text-amber-700 border border-amber-200"
+                                  : "bg-neutral-100 text-neutral-600 border border-neutral-200"
+                              }`}
+                            >
+                              {status.charAt(0).toUpperCase() + status.slice(1)}
+                            </span>
+                          );
+                        })()}
                       </td>
 
                       {/* Display Order */}
                       <td className="p-4 font-mono text-[11px] text-neutral-500">
-                        #{p.displayOrder}
+                        #{p.displayOrder ?? 0}
                       </td>
 
                       {/* Actions */}
