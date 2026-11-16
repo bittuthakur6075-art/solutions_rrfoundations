@@ -7,7 +7,7 @@ export const CATEGORIES: Category[] = [
     "slug": "badges-lapel-pins",
     "description": "In-house manufactured stainless steel name badges, magnetic fastener badges, die-struck brass lapel pins, acrylic badges, and political campaign insignias.",
     "image": "/assets/products/category-badge-showcase.jpg",
-    "featuredProductCount": 45,
+    "featuredProductCount": 61,
     "highlights": [
       "Pure copper & steel cores",
       "Magnetic & safety clasp backings",
@@ -77,7 +77,7 @@ export const CATEGORIES: Category[] = [
     "slug": "examboards-stationery",
     "description": "Heavy-duty transparent acrylic examination pads, printed wooden MDF clipboards, and institutional office desk accessories.",
     "image": "/assets/products/examboard-001.jpeg",
-    "featuredProductCount": 21,
+    "featuredProductCount": 27,
     "highlights": [
       "High-impact shatter-resistant acrylic",
       "Heavy-gauge steel spring clips",
@@ -91,7 +91,7 @@ export const CATEGORIES: Category[] = [
     "slug": "lanyards-credentials",
     "description": "Custom multi-color heat transfer satin lanyards, woven neck cords, transparent acrylic ID card holders, and turnkey event credentials.",
     "image": "/assets/products/category-lanyard-showcase.jpg",
-    "featuredProductCount": 12,
+    "featuredProductCount": 15,
     "highlights": [
       "High-density satin & polyester ribbon",
       "Safety quick-release breakaway buckles",
@@ -105,7 +105,7 @@ export const CATEGORIES: Category[] = [
     "slug": "keychains-acrylic-crafts",
     "description": "Custom die-struck metal keychains, laser-cut acrylic key tags, molded silicone accessories, and desktop paperweights.",
     "image": "/assets/products/category-keychain-showcase.jpg",
-    "featuredProductCount": 16,
+    "featuredProductCount": 17,
     "highlights": [
       "Heavyweight zinc alloy & brass stamping",
       "Crystal clear edge-polished acrylic",

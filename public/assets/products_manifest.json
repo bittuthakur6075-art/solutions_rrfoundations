@@ -1,5 +1,365 @@
 [
   {
+    "originalName": "WhatsApp Image 2026-11-14 at 10.01.38 PM (1).jpeg",
+    "cleanName": "lanyard-satin-multicolor-breakaway.jpeg",
+    "publicPath": "/assets/products/lanyard-satin-multicolor-breakaway.jpeg",
+    "catSlug": "lanyards-credentials",
+    "catName": "Lanyards & Identification",
+    "rawCategory": "Product Images New",
+    "size": 185049
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 10.01.38 PM.jpeg",
+    "cleanName": "lanyard-satin-multicolor-breakaway-alt.jpeg",
+    "publicPath": "/assets/products/lanyard-satin-multicolor-breakaway-alt.jpeg",
+    "catSlug": "lanyards-credentials",
+    "catName": "Lanyards & Identification",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 102208
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 10.01.39 PM (1).jpeg",
+    "cleanName": "lanyard-satin-royal-dualtone.jpeg",
+    "publicPath": "/assets/products/lanyard-satin-royal-dualtone.jpeg",
+    "catSlug": "lanyards-credentials",
+    "catName": "Lanyards & Identification",
+    "rawCategory": "Product Images New",
+    "size": 142802
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 10.01.38 PM (2).jpeg",
+    "cleanName": "lanyard-satin-royal-dualtone-alt1.jpeg",
+    "publicPath": "/assets/products/lanyard-satin-royal-dualtone-alt1.jpeg",
+    "catSlug": "lanyards-credentials",
+    "catName": "Lanyards & Identification",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 142212
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 10.01.39 PM.jpeg",
+    "cleanName": "lanyard-satin-royal-dualtone-alt2.jpeg",
+    "publicPath": "/assets/products/lanyard-satin-royal-dualtone-alt2.jpeg",
+    "catSlug": "lanyards-credentials",
+    "catName": "Lanyards & Identification",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 87066
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 10.01.38 PM (3).jpeg",
+    "cleanName": "lanyard-satin-corporate-yellow-buckle.jpeg",
+    "publicPath": "/assets/products/lanyard-satin-corporate-yellow-buckle.jpeg",
+    "catSlug": "lanyards-credentials",
+    "catName": "Lanyards & Identification",
+    "rawCategory": "Product Images New",
+    "size": 90874
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.10.00 PM.jpeg",
+    "cleanName": "clipboard-asian-paints-trucare.jpeg",
+    "publicPath": "/assets/products/clipboard-asian-paints-trucare.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New",
+    "size": 151115
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.10.00 PM (1).jpeg",
+    "cleanName": "clipboard-asian-paints-trucare-alt1.jpeg",
+    "publicPath": "/assets/products/clipboard-asian-paints-trucare-alt1.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 137172
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.10.00 PM (2).jpeg",
+    "cleanName": "clipboard-asian-paints-trucare-alt2.jpeg",
+    "publicPath": "/assets/products/clipboard-asian-paints-trucare-alt2.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 143308
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.43 PM.jpeg",
+    "cleanName": "desktop-calendar-stand-mobile-holder.jpeg",
+    "publicPath": "/assets/products/desktop-calendar-stand-mobile-holder.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New",
+    "size": 66934
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.43 PM (1).jpeg",
+    "cleanName": "desktop-calendar-stand-mobile-holder-alt.jpeg",
+    "publicPath": "/assets/products/desktop-calendar-stand-mobile-holder-alt.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 57485
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.44 PM.jpeg",
+    "cleanName": "desk-organizer-iffco-nano-zinc.jpeg",
+    "publicPath": "/assets/products/desk-organizer-iffco-nano-zinc.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New",
+    "size": 64500
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.45 PM.jpeg",
+    "cleanName": "desk-organizer-iffco-nano-zinc-alt1.jpeg",
+    "publicPath": "/assets/products/desk-organizer-iffco-nano-zinc-alt1.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 46091
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.46 PM.jpeg",
+    "cleanName": "desk-organizer-iffco-nano-zinc-alt2.jpeg",
+    "publicPath": "/assets/products/desk-organizer-iffco-nano-zinc-alt2.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 77414
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.46 PM (3).jpeg",
+    "cleanName": "desk-organizer-doctor-coat-memento.jpeg",
+    "publicPath": "/assets/products/desk-organizer-doctor-coat-memento.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New",
+    "size": 40752
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.46 PM (1).jpeg",
+    "cleanName": "desk-organizer-doctor-coat-memento-alt1.jpeg",
+    "publicPath": "/assets/products/desk-organizer-doctor-coat-memento-alt1.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 42477
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.46 PM (2).jpeg",
+    "cleanName": "desk-organizer-doctor-coat-memento-alt2.jpeg",
+    "publicPath": "/assets/products/desk-organizer-doctor-coat-memento-alt2.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 36104
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.47 PM.jpeg",
+    "cleanName": "desk-organizer-industrial-drum-barrel.jpeg",
+    "publicPath": "/assets/products/desk-organizer-industrial-drum-barrel.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New",
+    "size": 35189
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.47 PM (1).jpeg",
+    "cleanName": "desk-organizer-industrial-drum-barrel-alt.jpeg",
+    "publicPath": "/assets/products/desk-organizer-industrial-drum-barrel-alt.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 31474
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.47 PM (2).jpeg",
+    "cleanName": "desk-organizer-srmb-tmt-revolving.jpeg",
+    "publicPath": "/assets/products/desk-organizer-srmb-tmt-revolving.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New",
+    "size": 70275
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.48 PM (1).jpeg",
+    "cleanName": "desk-organizer-srmb-tmt-revolving-alt1.jpeg",
+    "publicPath": "/assets/products/desk-organizer-srmb-tmt-revolving-alt1.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 53283
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.48 PM.jpeg",
+    "cleanName": "desk-organizer-srmb-tmt-revolving-alt2.jpeg",
+    "publicPath": "/assets/products/desk-organizer-srmb-tmt-revolving-alt2.jpeg",
+    "catSlug": "examboards-stationery",
+    "catName": "Exam Boards & Desk Stationery",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 71206
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.16.18 PM (3).jpeg",
+    "cleanName": "badge-metal-ndrf-gold-relief.jpeg",
+    "publicPath": "/assets/products/badge-metal-ndrf-gold-relief.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 321476
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.16.18 PM (8).jpeg",
+    "cleanName": "badge-pin-bjp-campaign-oval.jpeg",
+    "publicPath": "/assets/products/badge-pin-bjp-campaign-oval.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 379224
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.16.18 PM (9).jpeg",
+    "cleanName": "badge-metal-nsg-gold-enamel.jpeg",
+    "publicPath": "/assets/products/badge-metal-nsg-gold-enamel.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 28671
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.17.30 PM.jpeg",
+    "cleanName": "badge-nameplate-magnetic-brass-trimurti.jpeg",
+    "publicPath": "/assets/products/badge-nameplate-magnetic-brass-trimurti.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 82976
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.17.30 PM (3).jpeg",
+    "cleanName": "badge-nameplate-executive-gold-bezel.jpeg",
+    "publicPath": "/assets/products/badge-nameplate-executive-gold-bezel.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 227537
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.18.20 PM.jpeg",
+    "cleanName": "badge-lapel-pin-india-map-tiranga.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-india-map-tiranga.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 126683
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.18.21 PM.jpeg",
+    "cleanName": "badge-lapel-pin-rotaract-women.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-rotaract-women.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 288794
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.19.28 PM (1).jpeg",
+    "cleanName": "badge-lapel-pin-rope-edge-gold-plated.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-rope-edge-gold-plated.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 318330
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.19.28 PM (3).jpeg",
+    "cleanName": "tie-clip-corporate-executive-gold-plated.jpeg",
+    "publicPath": "/assets/products/tie-clip-corporate-executive-gold-plated.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 139959
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.19.28 PM (4).jpeg",
+    "cleanName": "badge-lapel-pin-caza-round-square.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-caza-round-square.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 38114
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.19.28 PM (6).jpeg",
+    "cleanName": "badge-lapel-pin-icai-member-dome.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-icai-member-dome.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 35000
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.20.12 PM.jpeg",
+    "cleanName": "badge-lapel-pin-armed-forces-flag-day.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-armed-forces-flag-day.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 145376
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.22.04 PM.jpeg",
+    "cleanName": "badge-lapel-pin-korero-founders-forum.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-korero-founders-forum.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 274629
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.22.59 PM (1).jpeg",
+    "cleanName": "badge-lapel-pin-civil-defence-india.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-civil-defence-india.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 47342
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.22.59 PM (3).jpeg",
+    "cleanName": "badge-lapel-pin-nit-rourkela-magnetic.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-nit-rourkela-magnetic.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 52096
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.22 PM (1).jpeg",
+    "cleanName": "badge-lapel-pin-akzvii-square-gold.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-akzvii-square-gold.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New",
+    "size": 93287
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.23.22 PM.jpeg",
+    "cleanName": "badge-lapel-pin-akzvii-square-gold-alt.jpeg",
+    "publicPath": "/assets/products/badge-lapel-pin-akzvii-square-gold-alt.jpeg",
+    "catSlug": "badges-lapel-pins",
+    "catName": "Badges & Lapel Pins",
+    "rawCategory": "Product Images New (Secondary)",
+    "size": 54574
+  },
+  {
+    "originalName": "WhatsApp Image 2026-11-14 at 7.16.18 PM (5).jpeg",
+    "cleanName": "keychain-silicone-bjp-lotus.jpeg",
+    "publicPath": "/assets/products/keychain-silicone-bjp-lotus.jpeg",
+    "catSlug": "keychains-acrylic-crafts",
+    "catName": "Keychains & Acrylic Crafts",
+    "rawCategory": "Product Images New",
+    "size": 142061
+  },
+  {
     "originalName": "2.jpeg",
     "cleanName": "frame-001.jpeg",
     "publicPath": "/assets/products/frame-001.jpeg",
